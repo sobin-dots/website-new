@@ -1,0 +1,204 @@
+'use client'
+
+import * as React from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { usePathname } from "next/navigation"
+import { Menu, X, ChevronDown, Heart } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+
+const navigation = [
+  { name: "Home", href: "/" },
+  {
+    name: "Features",
+    href: "#",
+    dropdown: [
+      { name: "Care Management", href: "#features", description: "Personalised care plans & digital assessments." },
+      { name: "e-MAR", href: "#features", description: "Digitised medication administration." },
+      { name: "Staff & Rota Management", href: "#features", description: "Smart rostering & shift planning." },
+      { name: "Compliance & Reports", href: "#features", description: "CQC-aligned dashboards & audits." },
+    ],
+  },
+  { name: "Resources", href: "#" },
+  { name: "About", href: "#" },
+  { name: "Contact", href: "#" },
+]
+
+export function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
+  const [dropdownOpen, setDropdownOpen] = React.useState(false)
+  const pathname = usePathname()
+  const dropdownRef = React.useRef<HTMLDivElement>(null)
+
+  const isHome = pathname === '/'
+
+  React.useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setDropdownOpen(false)
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [])
+
+  const linkColorClass = isHome && !mobileMenuOpen
+    ? "text-white/80 hover:text-white"
+    : "text-muted-foreground hover:text-primary"
+
+  const activeLinkColorClass = isHome && !mobileMenuOpen
+    ? "text-white font-semibold border-b-2 border-white pb-1"
+    : "text-primary font-semibold border-b-2 border-primary pb-1"
+
+  return (
+    <header className={cn(
+      "z-50 w-full transition-all duration-300",
+      isHome && !mobileMenuOpen
+        ? "absolute top-0 left-0 border-b border-transparent bg-transparent"
+        : "sticky top-0 border-b border-primary/5 bg-background/80 backdrop-blur-md"
+    )}>
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 md:px-8">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2 group">
+          <Image
+            src="/images/home-page/logo-secondary.svg"
+            alt="Cantra Logo"
+            width={160}
+            height={56}
+            className="h-14 w-auto object-contain transition-all duration-300 group-hover:scale-[1.02]"
+            priority
+          />
+        </Link>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center gap-8">
+          {navigation.map((item) => (
+            <div key={item.name} className="relative" ref={item.dropdown ? dropdownRef : undefined}>
+              {item.dropdown ? (
+                <>
+                  <button
+                    onClick={() => setDropdownOpen(!dropdownOpen)}
+                    className={cn(
+                      "flex items-center gap-1 text-sm font-medium transition-colors py-2",
+                      linkColorClass,
+                      dropdownOpen && (isHome ? "text-white" : "text-primary")
+                    )}
+                  >
+                    {item.name}
+                    <ChevronDown className={cn("h-4 w-4 transition-transform duration-200", dropdownOpen && "rotate-180")} />
+                  </button>
+
+                  {/* Dropdown Menu */}
+                  {dropdownOpen && (
+                    <div className="absolute left-1/2 top-full z-10 mt-3 w-80 -translate-x-1/2 rounded-2xl border border-border bg-card p-4 shadow-xl shadow-primary/5 ring-1 ring-black/5 animate-in fade-in slide-in-from-top-2 duration-200">
+                      <div className="grid gap-4">
+                        {item.dropdown.map((subItem) => (
+                          <Link
+                            key={subItem.name}
+                            href={subItem.href}
+                            onClick={() => setDropdownOpen(false)}
+                            className="group flex flex-col gap-1 rounded-xl p-3 hover:bg-secondary/65 transition-colors"
+                          >
+                            <span className="text-sm font-semibold text-primary group-hover:text-primary transition-colors">
+                              {subItem.name}
+                            </span>
+                            <span className="text-xs text-muted-foreground leading-normal">
+                              {subItem.description}
+                            </span>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <Link
+                  href={item.href}
+                  className={cn(
+                    "text-sm font-medium transition-colors py-2",
+                    pathname === item.href ? activeLinkColorClass : linkColorClass
+                  )}
+                >
+                  {item.name}
+                </Link>
+              )}
+            </div>
+          ))}
+        </nav>
+
+        {/* Action Button */}
+        <div className="hidden md:flex items-center gap-4">
+          <Button
+            variant="default"
+            size="default"
+            className={cn(
+              "font-semibold px-7 rounded-full transition-all",
+              isHome && !mobileMenuOpen
+                ? "bg-primary hover:bg-primary/90 text-white border border-white/10"
+                : "bg-primary text-primary-foreground hover:bg-primary/90"
+            )}
+          >
+            Login
+          </Button>
+        </div>
+
+        {/* Mobile menu button */}
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className={cn(
+            "flex h-10 w-10 items-center justify-center rounded-full border transition-colors md:hidden",
+            isHome && !mobileMenuOpen
+              ? "border-white/20 text-white hover:bg-white/10"
+              : "border-border text-primary hover:bg-secondary/60"
+          )}
+        >
+          {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+        </button>
+      </div>
+
+      {/* Mobile Drawer */}
+      {mobileMenuOpen && (
+        <div className="fixed inset-0 top-20 z-45 h-[calc(100vh-5rem)] w-full border-t border-border bg-background px-6 py-8 md:hidden animate-in fade-in slide-in-from-top-4 duration-300">
+          <nav className="flex flex-col gap-6">
+            {navigation.map((item) => (
+              <div key={item.name} className="flex flex-col gap-2">
+                {item.dropdown ? (
+                  <>
+                    <span className="text-lg font-semibold text-primary">{item.name}</span>
+                    <div className="ml-4 flex flex-col gap-3 border-l border-border pl-4 mt-2">
+                      {item.dropdown.map((subItem) => (
+                        <Link
+                          key={subItem.name}
+                          href={subItem.href}
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <Link
+                    href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-lg font-medium text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                )}
+              </div>
+            ))}
+            <div className="mt-8 border-t border-border pt-6">
+              <Button className="w-full font-semibold" size="lg">
+                Login
+              </Button>
+            </div>
+          </nav>
+        </div>
+      )}
+    </header>
+  )
+}
+
