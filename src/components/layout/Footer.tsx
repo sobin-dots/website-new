@@ -32,7 +32,7 @@ const footerNavigation = {
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-primary-800 text-white">
       <div className="mx-auto max-w-7xl px-6 md:px-8 pt-14 pb-10">
 
         {/* Main grid: Logo col + 4 nav cols */}

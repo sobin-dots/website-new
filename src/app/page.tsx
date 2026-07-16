@@ -2,23 +2,7 @@
 
 import * as React from "react"
 import Image from "next/image"
-import {
-  ArrowUpRight,
-  FileText,
-  Pill,
-  Calendar,
-  ShieldCheck,
-  CheckCircle2,
-  Lock,
-  Globe,
-  Star,
-  Users,
-  Activity,
-  ArrowRight,
-  TrendingUp,
-  Clock,
-  Sparkles
-} from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Features } from "@/components/sections/Features"
 import { Showcase } from "@/components/sections/Showcase"

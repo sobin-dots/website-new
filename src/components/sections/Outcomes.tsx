@@ -1,6 +1,6 @@
 'use client'
 
-import * as React from "react"
+
 import { CheckCircle, ClipboardList, Eye, Lock, FileCheck, Globe } from "lucide-react"
 
 const cards = [

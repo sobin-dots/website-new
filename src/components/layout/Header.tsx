@@ -14,7 +14,7 @@ const navigation = [
     name: "Features",
     href: "#",
     dropdown: [
-      { name: "Care Management", href: "#features", description: "Personalised care plans & digital assessments." },
+      { name: "Care Management", href: "/assessment-care-planning", description: "Personalised care plans & digital assessments." },
       { name: "e-MAR", href: "#features", description: "Digitised medication administration." },
       { name: "Staff & Rota Management", href: "#features", description: "Smart rostering & shift planning." },
       { name: "Compliance & Reports", href: "#features", description: "CQC-aligned dashboards & audits." },
@@ -28,10 +28,23 @@ const navigation = [
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false)
   const [dropdownOpen, setDropdownOpen] = React.useState(false)
+  const [scrolled, setScrolled] = React.useState(false)
   const pathname = usePathname()
   const dropdownRef = React.useRef<HTMLDivElement>(null)
 
   const isHome = pathname === '/'
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   React.useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -54,15 +67,19 @@ export function Header() {
   return (
     <header className={cn(
       "z-50 w-full transition-all duration-300",
-      isHome && !mobileMenuOpen
-        ? "absolute top-0 left-0 border-b border-transparent bg-transparent"
-        : "sticky top-0 border-b border-primary/5 bg-background/80 backdrop-blur-md"
+      isHome
+        ? scrolled
+          ? "sticky top-0 bg-primary shadow-md border-b border-white/5"
+          : "absolute top-0 left-0 border-b border-transparent bg-transparent"
+        : scrolled
+          ? "sticky top-0 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100"
+          : "sticky top-0 border-b border-transparent bg-transparent"
     )}>
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 md:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
           <Image
-            src="/images/home-page/logo-secondary.svg"
+            src={isHome ? "/images/home-page/logo-secondary.svg" : "/images/home-page/logo-primary.svg"}
             alt="Cantra Logo"
             width={160}
             height={56}
@@ -135,7 +152,9 @@ export function Header() {
             className={cn(
               "font-semibold px-7 rounded-full transition-all",
               isHome && !mobileMenuOpen
-                ? "bg-primary hover:bg-primary/90 text-white border border-white/10"
+                ? scrolled
+                  ? "bg-white hover:bg-slate-100 text-primary border border-transparent"
+                  : "bg-primary hover:bg-primary/90 text-white border border-white/10"
                 : "bg-primary text-primary-foreground hover:bg-primary/90"
             )}
           >

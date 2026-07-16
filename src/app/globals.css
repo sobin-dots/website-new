@@ -15,7 +15,7 @@
   --warm-ivory: 40 30% 95%; /* #F7F3EB */
   --warm-ivory-dark: 40 28% 92%; /* #F3EDE1 */
   
-  --background: 40 30% 97%; /* Very soft ivory off-white */
+  --background: 0 0% 100%; /* Pure white background */
   --foreground: 170 22% 10%; /* Primary Dark #141F1E */
   
   --card: 0 0% 100%;
@@ -84,8 +84,12 @@
   --color-popover: hsl(var(--popover));
   --color-popover-foreground: hsl(var(--popover-foreground));
   --color-primary: hsl(var(--primary));
+  --color-primary-800: hsl(var(--primary-dark));
+  --color-primary-light: hsl(var(--primary-light));
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-secondary: hsl(var(--secondary));
+  --color-secondary-dark: hsl(var(--secondary-dark));
+  --color-secondary-light: hsl(var(--secondary-light));
   --color-secondary-foreground: hsl(var(--secondary-foreground));
   --color-muted: hsl(var(--muted));
   --color-muted-foreground: hsl(var(--muted-foreground));
