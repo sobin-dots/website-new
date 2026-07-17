@@ -16,11 +16,11 @@ const footerNavigation = {
     { name: "Disability Services", href: "#" },
   ],
   company: [
-    { name: "About Us", href: "#" },
+    { name: "About Us", href: "/about" },
     { name: "Careers", href: "#" },
-    { name: "Blog", href: "#" },
+    { name: "Blog", href: "/blog" },
     { name: "Press", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Contact", href: "/contact" },
   ],
   legal: [
     { name: "Privacy Policy", href: "#" },
@@ -32,7 +32,7 @@ const footerNavigation = {
 
 export function Footer() {
   return (
-    <footer className="bg-primary-800 text-white">
+    <footer className="bg-primary-600 text-white">
       <div className="mx-auto max-w-7xl px-6 md:px-8 pt-14 pb-10">
 
         {/* Main grid: Logo col + 4 nav cols */}

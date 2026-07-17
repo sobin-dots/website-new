@@ -8,7 +8,7 @@ const coreFeatures = [
     icon: FileText,
     title: "Care Management",
     description: "Build, review, and update personalised care plans, assessments, and daily records in one secure workspace. Keep every team member aligned with real-time information and automated workflows.",
-    href: "/assessment-care-planning"
+    href: "/care-management"
   },
   {
     icon: Pill,

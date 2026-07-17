@@ -7,6 +7,13 @@ import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useGSAP } from "@gsap/react"
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger)
+}
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -14,15 +21,15 @@ const navigation = [
     name: "Features",
     href: "#",
     dropdown: [
-      { name: "Care Management", href: "/assessment-care-planning", description: "Personalised care plans & digital assessments." },
+      { name: "Care Management", href: "/care-management", description: "Personalised care plans & digital assessments." },
       { name: "e-MAR", href: "#features", description: "Digitised medication administration." },
       { name: "Staff & Rota Management", href: "#features", description: "Smart rostering & shift planning." },
       { name: "Compliance & Reports", href: "#features", description: "CQC-aligned dashboards & audits." },
     ],
   },
-  { name: "Resources", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Resources", href: "/blog" },
+  { name: "About", href: "/about" },
+  { name: "Contact", href: "/contact" },
 ]
 
 export function Header() {
@@ -34,17 +41,26 @@ export function Header() {
 
   const isHome = pathname === '/'
 
-  React.useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setScrolled(true)
-      } else {
-        setScrolled(false)
-      }
+  useGSAP(() => {
+    if (!isHome) {
+      setScrolled(true)
+      return
     }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+
+    setScrolled(false)
+
+    const trigger = ScrollTrigger.create({
+      start: 500,
+      end: 99999,
+      onToggle: (self) => {
+        setScrolled(self.isActive)
+      }
+    })
+
+    return () => {
+      trigger.kill()
+    }
+  }, { dependencies: [isHome] })
 
   React.useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -71,9 +87,7 @@ export function Header() {
         ? scrolled
           ? "sticky top-0 bg-primary shadow-md border-b border-white/5"
           : "absolute top-0 left-0 border-b border-transparent bg-transparent"
-        : scrolled
-          ? "sticky top-0 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100"
-          : "sticky top-0 border-b border-transparent bg-transparent"
+        : "sticky top-0 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm"
     )}>
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 md:px-8">
         {/* Logo */}

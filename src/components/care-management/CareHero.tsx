@@ -2,11 +2,10 @@
 
 import * as React from "react"
 import Image from "next/image"
-import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-export function AssessmentHero() {
+export function CareHero() {
   return (
     <section className="py-12 md:py-20 bg-white overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 md:px-8">
@@ -58,7 +57,7 @@ export function AssessmentHero() {
           {/* Right Column: Featured Caregiver Illustration (5 columns) */}
           <div className="lg:col-span-5 relative w-full aspect-[4/3] md:aspect-[1.1] max-w-md lg:max-w-none mx-auto animate-in fade-in slide-in-from-right-4 duration-500">
             <Image
-              src="/images/assessment-careplanning/hero-image.png"
+              src="/images/care-management/hero-image.png"
               alt="Caregiver holding clipboard with checkmark badges"
               fill
               priority
