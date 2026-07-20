@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from "react"
 import { CareHero } from "@/components/care-management/CareHero"
 import { CareFeatures } from "@/components/care-management/CareFeatures"
 import { CareConnectBanner } from "@/components/care-management/CareConnectBanner"
@@ -10,7 +9,7 @@ import { CareCTA } from "@/components/care-management/CareCTA"
 export default function CareManagementPage() {
   return (
     <div className="min-h-screen pt-20 bg-white text-slate-900">
-      
+
       {/* 1. Hero Header Section */}
       <CareHero />
 

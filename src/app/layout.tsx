@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${sansFont.variable} ${serifFont.variable} font-sans antialiased min-h-screen flex flex-col bg-background text-primary`}>
+      <body className={`${sansFont.variable} ${serifFont.variable} antialiased min-h-screen flex flex-col bg-background text-primary`}>
         <Header />
         <main className="flex-grow">
           {children}
