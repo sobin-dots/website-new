@@ -9,11 +9,11 @@ const footerNavigation = {
     { name: "Changelog", href: "#" },
   ],
   useCases: [
-    { name: "Residential Care", href: "#" },
-    { name: "Nursing Homes", href: "#" },
-    { name: "Home Care", href: "#" },
-    { name: "Hospice Care", href: "#" },
-    { name: "Disability Services", href: "#" },
+    { name: "Residential Care", href: "/care-service-types#residential-care-homes" },
+    { name: "Nursing Homes", href: "/care-service-types#nursing-homes" },
+    { name: "Mental Health Care", href: "/care-service-types#mental-health-care-homes" },
+    { name: "Home Care", href: "/care-service-types#residential-care-homes" },
+    { name: "Hospice Care", href: "/care-service-types#nursing-homes" },
   ],
   company: [
     { name: "About Us", href: "/about" },

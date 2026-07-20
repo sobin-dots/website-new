@@ -22,9 +22,9 @@ const navigation = [
     href: "#",
     dropdown: [
       { name: "Care Management", href: "/care-management", description: "Personalised care plans & digital assessments." },
-      { name: "e-MAR", href: "#features", description: "Digitised medication administration." },
-      { name: "Staff & Rota Management", href: "#features", description: "Smart rostering & shift planning." },
-      { name: "Compliance & Reports", href: "#features", description: "CQC-aligned dashboards & audits." },
+      { name: "e-MAR Management", href: "/e-mar", description: "Digitised medication administration & stock control." },
+      { name: "Incident Management", href: "/incident-management", description: "Log, track & report care incidents." },
+      { name: "Compliance & Reports", href: "/cqc-compliance", description: "CQC-aligned dashboards & audits." },
     ],
   },
   { name: "Resources", href: "/blog" },
@@ -87,7 +87,7 @@ export function Header() {
         ? scrolled
           ? "sticky top-0 bg-primary shadow-md border-b border-white/5"
           : "absolute top-0 left-0 border-b border-transparent bg-transparent"
-        : "sticky top-0 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm"
+        : "sticky top-0 bg-white/95 backdrop-blur-md border-slate-100"
     )}>
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 md:px-8">
         {/* Logo */}

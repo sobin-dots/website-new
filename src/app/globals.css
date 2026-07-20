@@ -111,6 +111,10 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
 
+  --font-sans: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-dm-serif), Georgia, serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
   --animate-bounce-slow: bounce-slow 4s infinite;
 
   @keyframes bounce-slow {
@@ -128,8 +132,23 @@
   }
 }
 
+.font-serif,
+.font-dm-serif {
+  font-family: var(--font-dm-serif), Georgia, serif !important;
+  font-weight: 400 !important;
+}
+
+.font-sans {
+  font-family: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+}
+
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
+  font-family: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
   font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+p {
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }

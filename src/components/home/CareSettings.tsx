@@ -1,5 +1,6 @@
 'use client'
 
+import Link from "next/link"
 import Image from "next/image"
 
 export function CareSettings() {
@@ -21,7 +22,10 @@ export function CareSettings() {
         <div className="space-y-6">
 
           {/* Top Featured Card - Full Width */}
-          <div className="relative w-full h-[200px] sm:h-[260px] md:h-[320px] overflow-hidden rounded-[32px] group shadow-sm">
+          <Link 
+            href="/care-service-types#residential-care-homes"
+            className="block relative w-full h-[200px] sm:h-[260px] md:h-[320px] overflow-hidden rounded-[32px] group shadow-sm cursor-pointer"
+          >
             <Image
               src="/images/home-page/residential-care-homes.png"
               alt="Residential Care Homes"
@@ -39,13 +43,16 @@ export function CareSettings() {
                 Residential Care Homes
               </h3>
             </div>
-          </div>
+          </Link>
 
           {/* Bottom Grid - 2 Columns */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             {/* Column 1 - Nursing Homes */}
-            <div className="relative w-full h-[160px] sm:h-[220px] md:h-[260px] overflow-hidden rounded-[32px] group shadow-sm">
+            <Link 
+              href="/care-service-types#nursing-homes"
+              className="block relative w-full h-[160px] sm:h-[220px] md:h-[260px] overflow-hidden rounded-[32px] group shadow-sm cursor-pointer"
+            >
               <Image
                 src="/images/home-page/nursing-homes.png"
                 alt="Nursing Homes"
@@ -60,10 +67,13 @@ export function CareSettings() {
                   Nursing Homes
                 </h3>
               </div>
-            </div>
+            </Link>
 
             {/* Column 2 - Mental Health Care Homes */}
-            <div className="relative w-full h-[160px] sm:h-[220px] md:h-[260px] overflow-hidden rounded-[32px] group shadow-sm">
+            <Link 
+              href="/care-service-types#mental-health-care-homes"
+              className="block relative w-full h-[160px] sm:h-[220px] md:h-[260px] overflow-hidden rounded-[32px] group shadow-sm cursor-pointer"
+            >
               <Image
                 src="/images/home-page/mental-health-care-homes.png"
                 alt="Mental Health Care Homes"
@@ -78,7 +88,7 @@ export function CareSettings() {
                   Mental Health Care Homes
                 </h3>
               </div>
-            </div>
+            </Link>
 
           </div>
 

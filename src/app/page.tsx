@@ -76,7 +76,7 @@ export default function Home() {
 
               <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.1] text-white">
                 Care Management <br />
-                That <span className="font-serif italic font-bold text-white">Puts People First.</span>
+                That <span className="font-serif italic font-normal text-white">Puts People First.</span>
               </h1>
 
               <p className="text-base md:text-lg text-white/80 max-w-xl leading-relaxed">
