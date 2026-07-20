@@ -71,19 +71,17 @@ export function Faq() {
                     onClick={() => toggleItem(idx)}
                     className="w-full flex items-center justify-between gap-4 text-left py-2 focus:outline-none group"
                   >
-                    <span className="font-bold text-sm md:text-base text-slate-800 group-hover:text-primary transition-colors font-sans">
+                    <span className="font-bold text-sm md:text-base text-slate-800 group-hover:text-primary transition-colors font-body">
                       {item.question}
                     </span>
                     <ChevronDown
-                      className={`h-5 w-5 text-slate-600 shrink-0 transition-transform duration-300 ${
-                        isOpen ? "rotate-180" : ""
-                      }`}
+                      className={`h-5 w-5 text-slate-600 shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
                     />
                   </button>
 
                   {/* Accordion Content */}
                   {isOpen && (
-                    <div className="pt-3 pb-2 text-xs md:text-sm text-slate-500 leading-relaxed font-sans animate-in fade-in duration-200">
+                    <div className="pt-3 pb-2 text-xs md:text-sm text-slate-500 leading-relaxed font-body animate-in fade-in duration-200">
                       {item.answer}
                     </div>
                   )}

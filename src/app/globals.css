@@ -142,6 +142,11 @@
   font-family: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
 }
 
+.font-body,
+.font-inter {
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
 body {
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
@@ -149,6 +154,7 @@ body {
   font-feature-settings: "rlig" 1, "calt" 1;
 }
 
-p {
+p,
+span {
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }

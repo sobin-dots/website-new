@@ -82,7 +82,7 @@ export function Header() {
 
   return (
     <header className={cn(
-      "z-50 w-full transition-all duration-300",
+      "z-50 w-full font-body transition-all duration-300",
       isHome
         ? scrolled
           ? "sticky top-0 bg-primary shadow-md border-b border-white/5"
@@ -111,7 +111,7 @@ export function Header() {
                   <button
                     onClick={() => setDropdownOpen(!dropdownOpen)}
                     className={cn(
-                      "flex items-center gap-1 text-sm font-medium transition-colors py-2",
+                      "flex items-center gap-1 text-base font-inter transition-colors py-2",
                       linkColorClass,
                       dropdownOpen && (isHome ? "text-white" : "text-primary")
                     )}
@@ -131,10 +131,10 @@ export function Header() {
                             onClick={() => setDropdownOpen(false)}
                             className="group flex flex-col gap-1 rounded-xl p-3 hover:bg-secondary/65 transition-colors"
                           >
-                            <span className="text-sm font-semibold text-primary group-hover:text-primary transition-colors">
+                            <span className="text-base font-semibold text-primary group-hover:text-primary transition-colors">
                               {subItem.name}
                             </span>
-                            <span className="text-xs text-muted-foreground leading-normal">
+                            <span className="text-sm text-muted-foreground leading-normal">
                               {subItem.description}
                             </span>
                           </Link>
@@ -147,7 +147,7 @@ export function Header() {
                 <Link
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors py-2",
+                    "text-base font-inter font-medium transition-colors py-2",
                     pathname === item.href ? activeLinkColorClass : linkColorClass
                   )}
                 >
@@ -164,7 +164,7 @@ export function Header() {
             variant="default"
             size="default"
             className={cn(
-              "font-semibold px-7 rounded-full transition-all",
+              "font-semibold text-base px-7 rounded-full transition-all",
               isHome && !mobileMenuOpen
                 ? scrolled
                   ? "bg-white hover:bg-slate-100 text-primary border border-transparent"
@@ -205,7 +205,7 @@ export function Header() {
                           key={subItem.name}
                           href={subItem.href}
                           onClick={() => setMobileMenuOpen(false)}
-                          className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                          className="text-base font-medium text-muted-foreground hover:text-primary transition-colors"
                         >
                           {subItem.name}
                         </Link>
