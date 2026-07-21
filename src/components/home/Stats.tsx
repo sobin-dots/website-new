@@ -1,6 +1,6 @@
 'use client'
 
-
+import Image from "next/image"
 
 const metrics = [
   {
@@ -58,16 +58,28 @@ export function Stats() {
         {/* Bottom Social Proof Pill */}
         <div className="mt-16 flex justify-center">
           <div className="inline-flex items-center gap-3 rounded-full border border-white/25 bg-black/10 px-5 py-2.5 backdrop-blur-sm">
-            <div className="flex -space-x-2.5">
-              <div className="inline-flex h-7 w-7 items-center justify-center rounded-full ring-2 ring-primary bg-gradient-to-tr from-primary to-[#60928A] text-white font-bold text-[9px]">
-                CN
-              </div>
-              <div className="inline-flex h-7 w-7 items-center justify-center rounded-full ring-2 ring-primary bg-gradient-to-tr from-[#C0714F] to-[#E39D7E] text-white font-bold text-[9px]">
-                AM
-              </div>
-              <div className="inline-flex h-7 w-7 items-center justify-center rounded-full ring-2 ring-primary bg-gradient-to-tr from-foreground to-primary text-white font-bold text-[9px]">
-                KD
-              </div>
+            <div className="flex -space-x-2 shrink-0">
+              <Image
+                src="/images/home-page/hero-person-1.png"
+                alt="Care professional 1"
+                width={32}
+                height={32}
+                className="h-8 w-8 rounded-full object-cover ring-2 ring-white/30"
+              />
+              <Image
+                src="/images/home-page/hero-person-2.png"
+                alt="Care professional 2"
+                width={32}
+                height={32}
+                className="h-8 w-8 rounded-full object-cover ring-2 ring-white/30"
+              />
+              <Image
+                src="/images/home-page/hero-person-3.png"
+                alt="Care professional 3"
+                width={32}
+                height={32}
+                className="h-8 w-8 rounded-full object-cover ring-2 ring-white/30"
+              />
             </div>
             <span className="text-[11px] md:text-xs text-[#FAF3EB] font-medium">
               Join 12,000+ care professionals making a difference
