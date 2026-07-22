@@ -67,18 +67,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] lg:min-h-screen flex items-center overflow-hidden bg-foreground text-white pt-24 pb-20 lg:py-0">
         {/* Full background image */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 top-[-10px]">
           <Image
             src="/images/home-page/hero-bg.svg"
             alt="Caregiver helping senior resident"
             fill
             priority
-            className="object-cover object-center lg:object-[center_right]"
+            className="object-cover object-center lg:object-[center_top]"
           />
-          {/* Subtle dark gradient overlay for text contrast */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/25 to-transparent" />
-          {/* Bottom vignette overlay to blend with next section */}
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-foreground to-transparent opacity-60" />
+          <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/50 to-black/50" />
         </div>
 
         <div className="mx-auto max-w-7xl px-6 md:px-8 relative z-10 w-full">
@@ -87,9 +84,9 @@ export default function Home() {
             {/* Left Hero Text */}
             <div className="lg:col-span-6 space-y-8 animate-in fade-in slide-in-from-left-4 duration-500">
 
-              <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.1] text-white">
-                Care Management <br />
-                That <span className="font-serif italic font-normal text-white">Puts People First.</span>
+              <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.5] text-white">
+                Care Management That<br />
+                <span className="font-serif italic font-normal text-white">Puts People First.</span>
               </h1>
 
               <p className="text-base md:text-lg text-white/80 max-w-xl leading-relaxed">

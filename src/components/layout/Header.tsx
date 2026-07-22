@@ -74,7 +74,7 @@ export function Header() {
   }, [])
 
   const linkColorClass = isHome && !mobileMenuOpen
-    ? "text-white/80 hover:text-white"
+    ? "text-white hover:text-white"
     : "hover:text-primary"
 
   const activeLinkColorClass = isHome && !mobileMenuOpen
@@ -112,8 +112,8 @@ export function Header() {
                   <button
                     onClick={() => setDropdownOpen(!dropdownOpen)}
                     className={cn(
-                      "flex items-center gap-1 text-base font-inter transition-colors py-2",
-                      linkColorClass,
+                      "flex items-center gap-1 text-base font-inter font-medium transition-colors py-2",
+                      item.dropdown?.some(subItem => pathname === subItem.href) ? activeLinkColorClass : linkColorClass,
                       dropdownOpen && (isHome ? "text-white" : "text-primary")
                     )}
                   >
@@ -168,8 +168,8 @@ export function Header() {
               "font-semibold text-base px-7 rounded-full transition-all",
               isHome && !mobileMenuOpen
                 ? scrolled
-                  ? "bg-white hover:bg-slate-100 text-primary border border-transparent"
-                  : "bg-primary hover:bg-primary/90 text-white border border-white/10"
+                  ? "bg-white hover:bg-slate-100 text-primary"
+                  : "bg-primary hover:bg-primary/90 text-white"
                 : "bg-primary text-primary-foreground hover:bg-primary/90"
             )}
           >
