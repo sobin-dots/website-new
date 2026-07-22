@@ -158,3 +158,15 @@ p,
 span {
   font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
+
+button,
+a,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+select,
+summary,
+label[for] {
+  cursor: pointer;
+}

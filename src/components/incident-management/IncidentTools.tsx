@@ -44,22 +44,22 @@ const tools = [
 
 export function IncidentTools() {
   return (
-    <section className="py-20 bg-white text-slate-900">
-      <div className="mx-auto max-w-7xl px-6 md:px-8 space-y-16">
+    <section className="py-4 sm:py-8 bg-white text-[#293836]">
+      <div className="w-full space-y-12 sm:space-y-16">
         
         {/* Centered Title */}
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary font-sans">
+        <div className="text-center max-w-[893px] mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
             Powerful Tools For Incident & Safeguarding Management
           </h2>
         </div>
 
         {/* 2-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-[1240px] mx-auto">
           {tools.map((item, idx) => (
-            <div key={idx} className="space-y-5 flex flex-col justify-between">
+            <div key={idx} className="space-y-4 flex flex-col justify-between">
               {/* Image Container */}
-              <div className="relative w-full aspect-[1.45] rounded-3xl overflow-hidden shadow-sm border border-slate-100">
+              <div className="relative w-full aspect-[1.45] rounded-[20px] overflow-hidden">
                 <Image 
                   src={item.image}
                   alt={item.title}
@@ -70,14 +70,14 @@ export function IncidentTools() {
               </div>
 
               {/* Text Block */}
-              <div className="space-y-2.5">
-                <h3 className="text-xl font-bold text-primary font-sans">
+              <div className="space-y-2">
+                <h3 className="text-xl sm:text-2xl md:text-[28px] font-bold text-[#293836] font-['Lato',sans-serif]">
                   {item.title}
                 </h3>
-                <h4 className="text-sm font-bold text-slate-700 font-sans">
+                <h4 className="text-base sm:text-lg md:text-[20px] font-medium text-[#293836] font-['Lato',sans-serif]">
                   {item.subtitle}
                 </h4>
-                <p className="text-xs text-slate-500 leading-relaxed">
+                <p className="text-xs sm:text-sm md:text-base font-normal leading-relaxed md:leading-[27px] text-[#293836] capitalize font-['Inter',sans-serif] pt-1">
                   {item.description}
                 </p>
               </div>

@@ -13,58 +13,52 @@ import {
 const advantages = [
   {
     icon: ShieldCheck,
-    iconColor: "text-blue-600 bg-blue-50",
     title: "Improve Medication Safety",
     description: "Reduce The Risk Of Missed Doses, Incorrect Administrations, And Medication-Related Incidents With Structured Digital Workflows."
   },
   {
     icon: FileCheck,
-    iconColor: "text-purple-600 bg-purple-50",
     title: "Maintain Compliance",
     description: "Keep Complete Medication Records, Audit Trails, And Administration History Ready For Inspections And Internal Reviews."
   },
   {
     icon: Clock,
-    iconColor: "text-orange-600 bg-orange-50",
     title: "Save Valuable Time",
     description: "Replace Manual Paperwork With Streamlined Digital Medication Recording, Allowing Staff To Spend More Time Supporting Residents."
   },
   {
     icon: BarChart3,
-    iconColor: "text-emerald-600 bg-emerald-50",
     title: "Increase Team Confidence",
     description: "Provide Carers With Clear Medication Guidance, Real-Time Alerts, And Accurate Resident Information Throughout Every Medication Round."
   },
   {
     icon: Heart,
-    iconColor: "text-amber-600 bg-amber-50",
     title: "Strengthen Accountability",
     description: "Know Exactly Who Administered Each Medication, When It Was Given, And Any Exceptions Recorded, Ensuring Complete Transparency."
   },
   {
     icon: ClipboardCheck,
-    iconColor: "text-indigo-600 bg-indigo-50",
-    title: "Simplify Medication Stock Management",
+    title: "Simplify Stock Management",
     description: "Prevent Unexpected Shortages With Automated Stock Tracking, Expiry Monitoring, And Timely Replenishment Alerts."
   }
 ]
 
 export function EmarAdvantage() {
   return (
-    <section className="py-20 bg-white text-slate-900">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+    <section className="py-4 sm:py-8 bg-white text-[#293836]">
+      <div className="w-full">
         
         {/* Header Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16 pb-8 border-b border-slate-100">
-          <div className="lg:col-span-6 space-y-3">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary font-sans leading-tight">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start mb-12 pb-6 border-b border-slate-100">
+          <div className="lg:col-span-6 space-y-2">
+            <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[50px] capitalize text-[#293836] font-['Lato',sans-serif]">
               The Cantra Advantage
             </h2>
-            <p className="text-lg text-slate-600 font-medium font-serif italic">
+            <p className="text-lg sm:text-xl md:text-[24px] font-medium leading-snug md:leading-[32px] capitalize text-[#3D5D58] font-['Lato',sans-serif]">
               Medication Management Built For Confidence.
             </p>
           </div>
-          <div className="lg:col-span-6 text-xs md:text-sm text-slate-500 leading-relaxed lg:pt-2">
+          <div className="lg:col-span-6 text-xs sm:text-sm md:text-base font-normal leading-relaxed md:leading-[27px] text-[#293836] capitalize font-['Inter',sans-serif] lg:pt-2">
             Empower Your Team With Intelligent Medication Workflows That Improve Safety, Strengthen Compliance, Reduce Errors, And Simplify Every Medication Round.
           </div>
         </div>
@@ -76,19 +70,19 @@ export function EmarAdvantage() {
             return (
               <div 
                 key={idx}
-                className="p-8 rounded-3xl bg-slate-50/40 border border-slate-100 space-y-4 shadow-xs hover:shadow-sm transition-all duration-300"
+                className="p-6 sm:p-8 rounded-[20px] bg-slate-50/40 border border-slate-100 space-y-4 hover:shadow-sm transition-all duration-300"
               >
                 {/* Circular Icon Badge */}
-                <div className={`flex h-10 w-10 items-center justify-center rounded-xl ${item.iconColor}`}>
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#DEE9E6] border border-[#3D5D58]/20 text-[#3D5D58]">
                   <IconComp className="h-5 w-5" />
                 </div>
                 
                 {/* Text Content */}
                 <div className="space-y-2">
-                  <h3 className="text-base font-bold text-slate-800 font-sans">
+                  <h3 className="text-base font-bold text-[#293836] font-['Lato',sans-serif]">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-slate-500 leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#293836] leading-relaxed font-['Inter',sans-serif]">
                     {item.description}
                   </p>
                 </div>

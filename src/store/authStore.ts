@@ -30,23 +30,47 @@ export const useAuthStore = create<AuthState>()(
       isAuthenticated: false,
       setAuth: (user, token) => {
         if (typeof window !== 'undefined') {
-          localStorage.setItem('token', token)
-          localStorage.setItem('user', JSON.stringify(user))
+          try {
+            localStorage.setItem('token', token)
+            localStorage.setItem('user', JSON.stringify(user))
+          } catch (e) {
+            console.warn('Storage access blocked:', e)
+          }
         }
         set({ user, token, isAuthenticated: true })
       },
       logout: () => {
         if (typeof window !== 'undefined') {
-          localStorage.removeItem('token')
-          localStorage.removeItem('user')
-          localStorage.removeItem('cantra-auth-storage')
+          try {
+            localStorage.removeItem('token')
+            localStorage.removeItem('user')
+            localStorage.removeItem('cantra-auth-storage')
+          } catch (e) {
+            console.warn('Storage access blocked:', e)
+          }
         }
         set({ user: null, token: null, isAuthenticated: false })
       },
     }),
     {
       name: 'cantra-auth-storage',
-      storage: typeof window !== 'undefined' ? createJSONStorage(() => localStorage) : undefined,
+      storage: typeof window !== 'undefined' ? createJSONStorage(() => {
+        try {
+          localStorage.setItem('__test__', '1');
+          localStorage.removeItem('__test__');
+          return localStorage;
+        } catch (e) {
+          console.warn("localStorage is blocked or unavailable. Using in-memory fallback.", e);
+          return {
+            getItem: (key: string) => null,
+            setItem: (key: string, value: string) => {},
+            removeItem: (key: string) => {},
+            clear: () => {},
+            key: (index: number) => null,
+            length: 0
+          };
+        }
+      }) : undefined,
       partialize: (state) => ({
         user: state.user,
         token: state.token,

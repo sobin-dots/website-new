@@ -5,77 +5,96 @@ import Image from "next/image"
 import Link from "next/link"
 import { CheckSquare, ArrowUpRight } from "lucide-react"
 
-const capabilities = [
+const capabilitiesRow1 = [
   "Mental Health Risk Assessments",
   "Behaviour Monitoring & ABC Recording",
   "Positive Behaviour Support",
+]
+
+const capabilitiesRow2 = [
   "Safeguarding & Incident Management",
   "Care Reviews & Outcome Tracking",
-  "Collaborative Care Planning"
+  "Collaborative Care Planning",
 ]
 
 export function MentalHealthCareHomes() {
   return (
-    <section id="mental-health-care-homes" className="py-8 md:py-12 bg-white text-slate-900 overflow-hidden">
-      <div className="mx-auto max-w-6xl px-6 md:px-8 space-y-12">
+    <section id="mental-health-care-homes" className="py-6 md:py-8 bg-white text-[#293836]">
+      <div className="mx-auto max-w-[1168px] px-4 sm:px-6 lg:px-8 space-y-[40px]">
 
-        {/* Centered Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3">
-          <h2 className="text-3xl md:text-4xl lg:text-[44px] font-bold tracking-tight text-primary font-sans leading-tight">
-            Mental Health Care Homes
-          </h2>
-          <h3 className="text-lg md:text-xl font-bold text-slate-700 font-sans">
-            Supporting Recovery Through Personalised Care.
-          </h3>
+        {/* Frame 2270: Top Content Block */}
+        <div className="flex flex-col items-center justify-center gap-[20px] max-w-[1166px] mx-auto text-center">
+
+          {/* Frame 2282 / Frame 744 & 745: Titles */}
+          <div className="flex flex-col items-center justify-center max-w-[1166px]">
+            {/* Title: H2 */}
+            <h2 className="text-3xl sm:text-4xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
+              Mental Health Care Homes
+            </h2>
+            {/* Subtitle: H3 */}
+            <h3 className="text-xl sm:text-2xl md:text-[24px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
+              Supporting recovery through personalised care.
+            </h3>
+          </div>
+
+          {/* Rectangle 120: Featured Center Image */}
+          <div className="relative w-full max-w-[900px] h-[240px] sm:h-[360px] md:h-[502px] rounded-[20px] overflow-hidden shadow-sm mx-auto">
+            <Image
+              src="/images/care-service-types/mental-health-care-homes.png"
+              alt="Group therapy session sitting in a circle in mental health care home"
+              fill
+              sizes="(max-width: 900px) 100vw, 900px"
+              className="object-cover object-center"
+              priority
+            />
+          </div>
+
+          {/* Paragraph Description */}
+          <div className="max-w-[900px] mx-auto">
+            <p className="text-sm md:text-base font-normal leading-[27px] text-[#293836] capitalize font-['Inter',sans-serif]">
+              Mental health services require structured care, proactive risk management, and detailed behavioural documentation. Cantra helps multidisciplinary teams record behavioural observations, manage risks, support safeguarding, and create personalised care pathways that promote recovery and wellbeing.
+            </p>
+          </div>
+
         </div>
 
-        {/* Featured Center Image */}
-        <div className="relative w-full aspect-[16/9] md:aspect-[2/1] rounded-3xl overflow-hidden shadow-sm">
-          <Image
-            src="/images/care-service-types/mental-health-care-homes.png"
-            alt="Group therapy session sitting in a circle in mental health care home"
-            fill
-            sizes="100vw"
-            className="object-cover object-center"
-          />
-        </div>
+        {/* Frame 2269: Key Capabilities */}
+        <div className="flex flex-col items-center gap-[20px] max-w-[1166px] mx-auto rounded-[20px] w-full">
+          
+          {/* Frame 746: Key Capabilities Header */}
+          <div className="flex flex-col justify-center items-center w-full bg-white">
+            <h4 className="text-xl sm:text-2xl md:text-[24px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif] text-center">
+              Key Capabilities
+            </h4>
+          </div>
 
-        {/* Paragraph Description */}
-        <div className="text-center max-w-3xl mx-auto">
-          <p className="text-xs md:text-sm text-slate-500 leading-relaxed">
-            Mental Health Services Require Structured Care, Proactive Risk Management, And Detailed Behavioural Documentation. Cantra Helps Multidisciplinary Teams Record Behavioural Observations, Manage Risks, Support Safeguarding, And Create Personalised Care Pathways That Promote Recovery And Wellbeing.
-          </p>
-        </div>
-
-        {/* Key Capabilities */}
-        <div className="space-y-8 pt-4">
-          <h4 className="text-xl font-bold text-slate-800 text-center font-sans">
-            Key Capabilities
-          </h4>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {capabilities.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3 text-xs md:text-sm font-medium text-slate-700">
-                <CheckSquare className="h-4 w-4 text-emerald-600 shrink-0" />
-                <span>{item}</span>
+          {/* Capabilities Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 gap-x-6 lg:gap-x-10 max-w-[1090px] w-full mx-auto bg-white">
+            {capabilitiesRow1.concat(capabilitiesRow2).map((title, idx) => (
+              <div key={idx} className="flex items-center gap-[10px] min-w-0">
+                <CheckSquare className="w-6 h-6 text-[#04AD31] shrink-0" />
+                <span className="text-sm sm:text-base font-normal leading-[27px] text-[#293836] capitalize font-['Inter',sans-serif]">
+                  {title}
+                </span>
               </div>
             ))}
           </div>
+
         </div>
 
-        {/* Bottom Outlined Callout Box */}
-        <div className="mt-12 p-8 md:p-10 rounded-3xl border border-slate-200/80 bg-white flex flex-col lg:flex-row items-center justify-between gap-8">
-          <p className="text-xs md:text-sm text-slate-500 leading-relaxed max-w-3xl">
-            Mental Health Services Require Structured, Responsive, And Person-Centred Support. Cantra Helps Multidisciplinary Teams Manage Behavioural Observations, Risk Assessments, Safeguarding, And Collaborative Care Planning Through Intelligent Digital Workflows. By Improving Communication And Providing A Complete Picture Of Each Individual's Journey, Cantra Supports Safer Environments And Better Recovery-Focused Outcomes.
+        {/* Frame 2273: Bottom Outlined Callout Box */}
+        <div className="mt-8 p-6 md:px-10 md:py-6 rounded-[30px] md:rounded-[40px] border border-[#3D5D58] bg-white flex flex-col lg:flex-row items-center justify-between gap-6 max-w-[1166px] mx-auto min-h-[172px]">
+          <p className="text-sm md:text-base font-normal leading-[27px] text-[#293836] max-w-[898px] font-['Inter',sans-serif]">
+            Mental health services require structured, responsive, and person-centred support. Cantra helps multidisciplinary teams manage behavioural observations, risk assessments, safeguarding, and collaborative care planning through intelligent digital workflows. By improving communication and providing a complete picture of each individual's journey, Cantra supports safer environments and better recovery-focused outcomes.
           </p>
 
           <Link
             href="/incident-management"
-            className="inline-flex items-center justify-center gap-3 rounded-full bg-primary hover:bg-primary/95 text-white font-bold text-xs md:text-sm px-6 py-3 transition-colors shadow-sm shrink-0 h-12"
+            className="inline-flex items-center justify-center gap-3 rounded-[50px] bg-[#3D5D58] hover:bg-[#3D5D58]/90 text-white font-medium text-[15px] px-5 py-2.5 transition-colors shadow-sm shrink-0 h-[57px]"
           >
-            Explore More
-            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-white">
-              <ArrowUpRight className="h-3.5 w-3.5" />
+            <span>Explore More</span>
+            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#DEE9E6] text-[#3D5D58] shrink-0">
+              <ArrowUpRight className="h-5 w-5 text-[#3D5D58]" />
             </div>
           </Link>
         </div>
@@ -84,3 +103,4 @@ export function MentalHealthCareHomes() {
     </section>
   )
 }
+

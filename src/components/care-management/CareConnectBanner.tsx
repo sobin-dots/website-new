@@ -3,41 +3,46 @@
 import * as React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 
 export function CareConnectBanner() {
   return (
-    <section className="py-12 bg-white">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
-        
-        {/* Banner Card Container */}
-        <div className="bg-secondary rounded-[32px] overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-8 md:p-12 lg:p-14 shadow-sm text-white">
-          
-          {/* Left Text Block (7 columns) */}
-          <div className="lg:col-span-7 space-y-8">
-            <h2 className="text-xl md:text-2xl lg:text-[28px] leading-[1.35] font-sans font-medium tracking-tight">
-              By Connecting Care Planning with Care Delivery, Care Teams Deliver Safer Care, Save Co-Workers' Time, And Deliver Compliant Care Every Day.
+    <section className="py-4 sm:py-8 bg-white overflow-hidden">
+      <div className="w-full">
+
+        {/* Banner Card Container (Frame 2238) */}
+        <div className="relative bg-[#A06256] rounded-[20px] flex flex-col lg:flex-row items-center justify-between px-6 sm:px-10 lg:px-12 py-8 sm:py-10 lg:py-0 min-h-[338px] isolation-isolate">
+
+          {/* Left Text & Button Stack (Frame 2239) */}
+          <div className="flex flex-col items-start gap-6 sm:gap-[29px] max-w-[623px] z-10 py-6 lg:py-10">
+
+            {/* Heading / Quote */}
+            <h2 className="text-xl sm:text-2xl lg:text-[32px] italic leading-snug lg:leading-[59px] capitalize text-white font-['Lato',sans-serif]">
+              By connecting care planning with care delivery, Cantra enables safer decisions, better collaboration, and greater confidence in every shift.
             </h2>
-            
-            <div className="pt-2">
-              <Link 
-                href="/free-trial"
-                className="inline-flex items-center gap-2 rounded-full bg-white hover:bg-slate-50 text-secondary font-bold text-sm px-6 py-3 transition-colors shadow-md"
-              >
-                Get Started
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </div>
+
+            {/* CTA Button (Frame 430 & 428) */}
+            <Link
+              href="/learn-more"
+              className="inline-flex items-center justify-center gap-2.5 rounded-full bg-[#FAF5F2] hover:bg-white text-[#B06246] font-medium text-[15px] px-5 h-[58px] min-w-[171px] transition-colors shrink-0"
+            >
+              <span>Learn More</span>
+              <div className="w-[39px] h-[39px] rounded-full bg-[#F4EAE0] flex items-center justify-center shrink-0">
+                <ArrowUpRight className="w-5 h-5 text-[#B06246] stroke-[2.5]" />
+              </div>
+            </Link>
+
           </div>
 
-          {/* Right Image Block (5 columns) */}
-          <div className="lg:col-span-5 relative w-full aspect-[1.25] md:aspect-[1.4] rounded-2xl overflow-hidden">
+          {/* Right Image Visual (ChatGPTImageJul16202602_12_58PM / by-connecting-care-planning.png) */}
+          <div className="relative w-full lg:w-[470px] h-[240px] sm:h-[320px] lg:h-[440px] lg:absolute lg:right-0 lg:-top-[50px] lg:bottom-0 z-0 mt-4 lg:mt-0 pointer-events-none">
             <Image
               src="/images/care-management/by-connecting-care-planning.png"
-              alt="Care planning and delivery connection"
+              alt="By connecting care planning with care delivery"
               fill
-              sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-cover object-center"
+              priority
+              sizes="(max-width: 1024px) 100vw, 470px"
+              className="object-contain lg:object-right-bottom"
             />
           </div>
 
@@ -47,3 +52,4 @@ export function CareConnectBanner() {
     </section>
   )
 }
+

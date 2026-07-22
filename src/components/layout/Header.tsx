@@ -74,7 +74,7 @@ export function Header() {
 
   const linkColorClass = isHome && !mobileMenuOpen
     ? "text-white/80 hover:text-white"
-    : "text-muted-foreground hover:text-primary"
+    : "hover:text-primary"
 
   const activeLinkColorClass = isHome && !mobileMenuOpen
     ? "text-white font-semibold border-b-2 border-white pb-1"
@@ -103,7 +103,7 @@ export function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8 ml-auto mr-8">
           {navigation.map((item) => (
             <div key={item.name} className="relative" ref={item.dropdown ? dropdownRef : undefined}>
               {item.dropdown ? (

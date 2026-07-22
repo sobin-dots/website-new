@@ -51,8 +51,8 @@ const benefits = [
 
 export function CareDifference() {
   return (
-    <section className="py-20 bg-white text-slate-900">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+    <section className="py-4 sm:py-8 bg-white text-slate-900">
+      <div className="w-full">
         
         {/* Heading Grid Block */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16 pb-8 border-b border-slate-100">

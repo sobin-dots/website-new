@@ -26,25 +26,38 @@ export default function Home() {
   const containerRef = React.useRef<HTMLDivElement>(null)
 
   useGSAP(() => {
+    if (typeof window === "undefined") return
+
+    const isMobile = window.matchMedia("(max-width: 768px)").matches
     const sections = gsap.utils.toArray<HTMLElement>(".scroll-section")
+
     sections.forEach((section) => {
-      gsap.fromTo(section,
-        {
-          opacity: 0,
-          y: 40
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: section,
-            start: "top 85%",
-            toggleActions: "play none none none"
+      if (isMobile) {
+        // On mobile/tablets, fade in sections immediately to prevent ScrollTrigger scroll locking
+        gsap.fromTo(section,
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 0.6, ease: "power2.out", delay: 0.1 }
+        )
+      } else {
+        // On desktop, trigger animations upon scrolling into view
+        gsap.fromTo(section,
+          {
+            opacity: 0,
+            y: 40
+          },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 85%",
+              toggleActions: "play none none none"
+            }
           }
-        }
-      )
+        )
+      }
     })
   }, { scope: containerRef })
 
@@ -156,52 +169,52 @@ export default function Home() {
 
 
       {/* Core Features Section */}
-      <div className="scroll-section opacity-0">
+      <div className="scroll-section">
         <Features />
       </div>
 
       {/* Care Settings We Serve Section */}
-      <div className="scroll-section opacity-0">
+      <div className="scroll-section">
         <CareSettings />
       </div>
 
       {/* See Cantra in Action Showcase Section */}
-      <div className="scroll-section opacity-0">
+      <div className="scroll-section">
         <Showcase />
       </div>
 
       {/* Process Onboarding Section */}
-      <div className="scroll-section opacity-0">
+      <div className="scroll-section">
         <Process />
       </div>
 
       {/* Outcomes Grid Section */}
-      <div className="scroll-section opacity-0">
+      <div className="scroll-section">
         <Outcomes />
       </div>
 
       {/* Why Care Providers Choose Cantra Section */}
-      <div className="scroll-section opacity-0">
+      <div className="scroll-section">
         <WhyChoose />
       </div>
 
       {/* Real Results Stats Section */}
-      <div className="scroll-section opacity-0">
+      <div className="scroll-section">
         <Stats />
       </div>
 
       {/* Newsletter Subscription Section */}
-      <div className="scroll-section opacity-0">
+      <div className="scroll-section">
         <Newsletter />
       </div>
 
       {/* Frequently Asked Questions Section */}
-      <div className="scroll-section opacity-0">
+      <div className="scroll-section">
         <Faq />
       </div>
 
       {/* CTA Banner Section */}
-      <div className="scroll-section opacity-0">
+      <div className="scroll-section">
         <CallToAction />
       </div>
 

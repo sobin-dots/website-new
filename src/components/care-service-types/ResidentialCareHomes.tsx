@@ -5,74 +5,96 @@ import Image from "next/image"
 import Link from "next/link"
 import { CheckSquare, ArrowUpRight } from "lucide-react"
 
-const capabilities = [
+const capabilitiesRow1 = [
   "Person-Centred Care Plans",
   "Daily Care & Task Management",
   "Activities & Wellbeing",
+]
+
+const capabilitiesRow2 = [
   "Resident Observations",
   "Family Communication",
-  "Incident Reporting"
+  "Incident Reporting",
 ]
+
+function GreenCheckboxIcon() {
+  return <CheckSquare className="w-6 h-6 text-[#04AD31] shrink-0" />
+}
 
 export function ResidentialCareHomes() {
   return (
-    <section id="residential-care-homes" className="pt-2 pb-8 md:pt-4 md:pb-16 bg-white text-slate-900 overflow-hidden">
-      <div className="mx-auto max-w-6xl px-6 md:px-8 space-y-12">
+    <section id="residential-care-homes" className="py-6 md:py-8 bg-white text-[#293836]">
+      <div className="mx-auto max-w-[1166px] px-4 sm:px-6 lg:px-8 space-y-[40px]">
 
-        {/* Centered Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3">
-          <h1 className="text-4xl md:text-5xl lg:text-[50px] font-bold tracking-tight text-primary font-sans leading-tight">
-            Residential Care Homes
-          </h1>
-          <h2 className="text-lg md:text-xl font-bold text-slate-700 font-sans">
-            Supporting Everyday Care With Confidence.
-          </h2>
+        {/* Frame 2270: Top Content Block */}
+        <div className="flex flex-col items-center justify-center gap-[20px] max-w-[1166px] mx-auto text-center">
+
+          {/* Frame 2280 / Frame 744 & 745: Titles */}
+          <div className="flex flex-col items-center justify-center max-w-[1166px]">
+            {/* Title: H1 */}
+            <h1 className="text-3xl sm:text-4xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
+              Residential Care Homes
+            </h1>
+            {/* Subtitle: H2 */}
+            <h2 className="text-xl sm:text-2xl md:text-[24px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
+              Supporting everyday care with confidence.
+            </h2>
+          </div>
+
+          {/* Rectangle 120: Featured Center Image */}
+          <div className="relative w-full max-w-[900px] h-[240px] sm:h-[360px] md:h-[502px] rounded-[20px] overflow-hidden shadow-sm mx-auto">
+            <Image
+              src="/images/care-service-types/residential-care-homes.png"
+              alt="Caregivers serving tea and playing board games with senior residents in residential care home"
+              fill
+              sizes="(max-width: 900px) 100vw, 900px"
+              className="object-cover object-center"
+              priority
+            />
+          </div>
+
+          {/* Paragraph Description */}
+          <div className="max-w-[900px] mx-auto">
+            <p className="text-sm md:text-base font-normal leading-[27px] text-[#293836] capitalize font-['Inter',sans-serif]">
+              Residential care homes focus on helping residents live comfortably, safely, and independently. Cantra streamlines daily care delivery by giving teams easy access to personalised care plans, daily tasks, observations, activities, family communication, and digital records—all from one connected platform.
+            </p>
+          </div>
+
         </div>
 
-        {/* Featured Center Image */}
-        <div className="relative w-full aspect-[16/9] md:aspect-[2/1] rounded-3xl overflow-hidden shadow-sm">
-          <Image
-            src="/images/care-service-types/residential-care-homes.png"
-            alt="Caregivers serving tea and playing board games with senior residents in residential care home"
-            fill
-            sizes="100vw"
-            className="object-cover object-center"
-            priority
-          />
-        </div>
+        {/* Frame 2269: Key Capabilities */}
+        <div className="flex flex-col items-center gap-[20px] max-w-[1166px] mx-auto rounded-[20px]">
 
-        {/* Paragraph Description */}
-        <div className="text-center max-w-3xl mx-auto">
-          <p className="text-xs md:text-sm text-slate-500 leading-relaxed">
-            Residential Care Homes Focus On Helping Residents Live Comfortably, Safely, And Independently. Cantra Streamlines Daily Care Delivery By Giving Teams Easy Access To Personalised Care Plans, Daily Tasks, Observations, Activities, Family Communication, And Digital Records—All From One Connected Platform.
-          </p>
-        </div>
+          {/* Frame 746: Key Capabilities Header */}
+          <div className="flex flex-col justify-center items-center w-full bg-white">
+            <h3 className="text-xl sm:text-2xl md:text-[24px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif] text-center">
+              Key Capabilities
+            </h3>
+          </div>
 
-        {/* Key Capabilities */}
-        <div className="space-y-8 pt-4">
-          <h3 className="text-xl font-bold text-slate-800 text-center font-sans">
-            Key Capabilities
-          </h3>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {capabilities.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-3 text-xs md:text-sm font-medium text-slate-700">
-                <CheckSquare className="h-4 w-4 text-emerald-600 shrink-0" />
-                <span>{item}</span>
+          {/* Capabilities Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 gap-x-6 lg:gap-x-10 max-w-[1090px] w-full mx-auto bg-white">
+            {capabilitiesRow1.concat(capabilitiesRow2).map((title, idx) => (
+              <div key={idx} className="flex items-center gap-[10px] min-w-0">
+                <GreenCheckboxIcon />
+                <span className="text-sm sm:text-base font-normal leading-[27px] text-[#293836] capitalize font-['Inter',sans-serif]">
+                  {title}
+                </span>
               </div>
             ))}
           </div>
+
         </div>
 
         {/* Bottom Outlined Callout Box */}
-        <div className="mt-12 p-8 md:p-10 rounded-3xl border border-slate-200/80 bg-white flex flex-col lg:flex-row items-center justify-between gap-8">
-          <p className="text-xs md:text-sm text-slate-500 leading-relaxed max-w-3xl">
-            Cantra Simplifies Every Stage Of Care Delivery, From Personalised Care Plans And Daily Routines To Resident Observations, Activities, Family Communication, And Compliance. By Bringing Everything Together In One Connected Platform, Care Teams Can Spend Less Time On Administration And More Time Delivering Meaningful, Person-Centred Support.
+        <div className="mt-8 p-6 md:p-10 rounded-[20px] border border-[#3D5D58] bg-white flex flex-col lg:flex-row items-center justify-between gap-6 max-w-[1166px] mx-auto">
+          <p className="text-sm md:text-base font-normal leading-[27px] text-[#293836] max-w-3xl font-['Inter',sans-serif]">
+            Cantra simplifies every stage of care delivery, from personalised care plans and daily routines to resident observations, activities, family communication, and compliance. By bringing everything together in one connected platform, care teams can spend less time on administration and more time delivering meaningful, person-centred support.
           </p>
 
           <Link
             href="/care-management"
-            className="inline-flex items-center justify-center gap-3 rounded-full bg-primary hover:bg-primary/95 text-white font-bold text-xs md:text-sm px-6 py-3 transition-colors shadow-sm shrink-0 h-12"
+            className="inline-flex items-center justify-center gap-3 rounded-full bg-primary hover:bg-primary/95 text-white font-bold text-sm px-6 py-3 transition-colors shadow-sm shrink-0 h-12"
           >
             Explore More
             <div className="flex h-6 w-6 items-center justify-center rounded-full bg-white/20 text-white">
@@ -85,3 +107,4 @@ export function ResidentialCareHomes() {
     </section>
   )
 }
+
