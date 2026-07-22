@@ -25,6 +25,7 @@ const navigation = [
       { name: "e-MAR Management", href: "/e-mar", description: "Digitised medication administration & stock control." },
       { name: "Incident Management", href: "/incident-management", description: "Log, track & report care incidents." },
       { name: "Compliance & Reports", href: "/cqc-compliance", description: "CQC-aligned dashboards & audits." },
+      { name: "Staff & Rota Management", href: "/staff-rota-management", description: "Intelligent scheduling, leave & workforce tracking." },
     ],
   },
   { name: "Resources", href: "/blog" },

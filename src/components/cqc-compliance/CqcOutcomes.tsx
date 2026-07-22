@@ -30,7 +30,7 @@ export function CqcOutcomes() {
   return (
     <section className="py-4 sm:py-8 bg-white text-[#293836]">
       <div className="w-full">
-        
+
         {/* Header Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start mb-12 pb-6 border-b border-slate-100">
           <div className="lg:col-span-6 space-y-2">
@@ -56,7 +56,7 @@ export function CqcOutcomes() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#DEE9E6] border border-[#3D5D58]/20 text-[#3D5D58] shadow-sm shrink-0">
                   <IconComp className="h-5 w-5" />
                 </div>
-                
+
                 {/* Text Block */}
                 <div className="space-y-2">
                   <h3 className="text-base sm:text-lg md:text-[20px] font-bold text-[#293836] font-['Lato',sans-serif]">

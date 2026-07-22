@@ -20,7 +20,7 @@ const coreFeatures = [
     icon: FileUser,
     title: "Staff & Rota Management",
     description: "Plan staff schedules with ease using smart rota management, shift planning, availability tracking, leave management, and real-time updates to ensure safe staffing and seamless care delivery.",
-    href: "/risk-management" // Placeholder until rota page is created
+    href: "/staff-rota-management" // Placeholder until rota page is created
   },
   {
     icon: ShieldCheck,

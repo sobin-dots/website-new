@@ -1,13 +1,13 @@
 'use client'
 
 import * as React from "react"
-import { 
-  Pill, 
-  FileWarning, 
-  Users, 
-  BarChart3, 
-  Heart, 
-  ClipboardCheck 
+import {
+  Pill,
+  FileWarning,
+  Users,
+  BarChart3,
+  Heart,
+  ClipboardCheck
 } from "lucide-react"
 
 const reports = [
@@ -47,7 +47,7 @@ export function CqcReportGeneration() {
   return (
     <section className="py-4 sm:py-8 bg-white text-[#293836]">
       <div className="w-full">
-        
+
         {/* Header Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start mb-12 pb-6 border-b border-slate-100">
           <div className="lg:col-span-6 space-y-2">
@@ -68,7 +68,7 @@ export function CqcReportGeneration() {
           {reports.map((item, idx) => {
             const IconComp = item.icon
             return (
-              <div 
+              <div
                 key={idx}
                 className="p-6 sm:p-8 rounded-[20px] bg-slate-50/40 border border-slate-100 space-y-4 hover:shadow-sm transition-all duration-300"
               >
@@ -76,7 +76,7 @@ export function CqcReportGeneration() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#DEE9E6] border border-[#3D5D58]/20 text-[#3D5D58]">
                   <IconComp className="h-5 w-5" />
                 </div>
-                
+
                 {/* Text Content */}
                 <div className="space-y-2">
                   <h3 className="text-base sm:text-lg md:text-[20px] font-bold text-[#293836] font-['Lato',sans-serif]">

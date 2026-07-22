@@ -1,24 +1,23 @@
 'use client'
 
-import * as React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
 export function CqcHero() {
   return (
-    <section className="py-4 sm:py-8 bg-white overflow-hidden text-[#293836]">
+    <section className="pt-4 sm:pt-6 md:pt-4 pb-0 bg-white overflow-hidden text-[#293836]">
       <div className="w-full">
-        
+
         {/* 2-Column Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
-          {/* Left Column (6 cols) */}
-          <div className="lg:col-span-7 flex flex-col justify-center items-start gap-5 sm:gap-[30px] max-w-[596px]">
-            
+
+          {/* Left Column (7 cols) */}
+          <div className="lg:col-span-6 flex flex-col justify-center items-start gap-5 sm:gap-[30px] max-w-none md:max-w-[680px]">
+
             {/* Title & Copy */}
             <div className="flex flex-col items-start gap-3 sm:gap-4">
-              <h1 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
+              <h1 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize font-['Lato',sans-serif]">
                 Stay Inspection-Ready. Every Day.
               </h1>
               <h2 className="text-lg sm:text-xl md:text-[24px] font-medium leading-snug md:leading-[32px] capitalize text-[#293836] font-['Lato',sans-serif]">
@@ -32,7 +31,7 @@ export function CqcHero() {
             {/* Action Buttons */}
             <div className="flex flex-wrap sm:flex-nowrap items-center gap-[10px] pt-1 w-full sm:w-auto">
               {/* Button 1: Start free trial */}
-              <Link 
+              <Link
                 href="/free-trial"
                 className="inline-flex items-center justify-center gap-[11px] sm:gap-[13px] rounded-full border border-[#527A73] hover:bg-[#EAF0EE]/60 text-[#3D5D58] font-medium text-[12px] sm:text-[13px] px-4 sm:px-5 py-2 transition-colors h-[44px] sm:h-[48px] w-full sm:w-auto min-w-0 sm:min-w-[189px] bg-transparent"
               >
@@ -41,9 +40,9 @@ export function CqcHero() {
                   <ArrowUpRight className="h-3.5 w-3.5 sm:h-4 sm:w-4 stroke-[2]" />
                 </div>
               </Link>
-              
+
               {/* Button 2: Book a Demo */}
-              <Link 
+              <Link
                 href="/book-demo"
                 className="inline-flex items-center justify-center gap-[11px] sm:gap-[13px] rounded-full border border-[#527A73] bg-[#527A73] hover:bg-[#527A73]/90 text-white font-medium text-[12px] sm:text-[13px] px-4 sm:px-5 py-2 transition-colors h-[44px] sm:h-[48px] w-full sm:w-auto min-w-0 sm:min-w-[171px]"
               >
@@ -56,14 +55,14 @@ export function CqcHero() {
           </div>
 
           {/* Right Column: Featured Caregiver Illustration (5 cols) */}
-          <div className="lg:col-span-5 relative w-full aspect-[4/3] md:aspect-[1.1] max-w-md lg:max-w-none mx-auto mt-4 lg:mt-0">
+          <div className="lg:col-span-6 relative w-full h-[300px] sm:h-[420px] md:h-[480px] lg:h-[540px] max-w-md lg:max-w-none mx-auto mt-4 lg:mt-0 self-end">
             <Image
               src="/images/cqc-compliance/hero-image.png"
               alt="Caregiver holding clipboard with compliance badge icons"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-contain object-center lg:object-right"
+              className="object-contain object-bottom lg:object-right-bottom"
             />
           </div>
 
