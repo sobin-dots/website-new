@@ -22,20 +22,19 @@ export function CareSettings() {
         <div className="space-y-6">
 
           {/* Top Featured Card - Full Width */}
-          <Link 
+          <Link
             href="/care-service-types#residential-care-homes"
-            className="block relative w-full h-[200px] sm:h-[260px] md:h-[320px] overflow-hidden rounded-[32px] group shadow-sm cursor-pointer"
+            className="block relative w-full h-[200px] sm:h-[260px] md:h-[330px] overflow-hidden rounded-[32px] group shadow-sm cursor-pointer"
           >
             <Image
               src="/images/home-page/residential-care-homes.png"
               alt="Residential Care Homes"
               fill
-              priority
               sizes="100vw"
               className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
             />
-            {/* Dark Gradient Overlay for Readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+            {/* Dark Overlay for Readability */}
+            <div className="absolute inset-0 bg-black/30" />
 
             {/* Text Label */}
             <div className="absolute bottom-6 left-6 md:bottom-8 md:left-8 z-10">
@@ -49,9 +48,9 @@ export function CareSettings() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             {/* Column 1 - Nursing Homes */}
-            <Link 
+            <Link
               href="/care-service-types#nursing-homes"
-              className="block relative w-full h-[160px] sm:h-[220px] md:h-[260px] overflow-hidden rounded-[32px] group shadow-sm cursor-pointer"
+              className="block relative w-full h-[160px] sm:h-[220px] md:h-[330px] overflow-hidden rounded-[32px] group shadow-sm cursor-pointer"
             >
               <Image
                 src="/images/home-page/nursing-homes.png"
@@ -60,19 +59,19 @@ export function CareSettings() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+              <div className="absolute inset-0 bg-black/30" />
 
               <div className="absolute bottom-6 left-6 md:bottom-8 md:left-8 z-10">
-                <h3 className="text-xl md:text-2xl font-serif italic text-white font-medium drop-shadow-sm">
+                <h3 className="text-2xl md:text-3xl lg:text-[38px] font-serif italic text-white font-medium drop-shadow-sm">
                   Nursing Homes
                 </h3>
               </div>
             </Link>
 
             {/* Column 2 - Mental Health Care Homes */}
-            <Link 
+            <Link
               href="/care-service-types#mental-health-care-homes"
-              className="block relative w-full h-[160px] sm:h-[220px] md:h-[260px] overflow-hidden rounded-[32px] group shadow-sm cursor-pointer"
+              className="block relative w-full h-[160px] sm:h-[220px] md:h-[330px] overflow-hidden rounded-[32px] group shadow-sm cursor-pointer"
             >
               <Image
                 src="/images/home-page/mental-health-care-homes.png"
@@ -81,10 +80,10 @@ export function CareSettings() {
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+              <div className="absolute inset-0 bg-black/30" />
 
               <div className="absolute bottom-6 left-6 md:bottom-8 md:left-8 z-10">
-                <h3 className="text-xl md:text-2xl font-serif italic text-white font-medium drop-shadow-sm">
+                <h3 className="text-2xl md:text-3xl lg:text-[38px] font-serif italic text-white font-medium drop-shadow-sm">
                   Mental Health Care Homes
                 </h3>
               </div>

@@ -22,13 +22,13 @@ const navigation = [
     href: "#",
     dropdown: [
       { name: "Care Management", href: "/care-management", description: "Personalised care plans & digital assessments." },
-      { name: "e-MAR Management", href: "/e-mar", description: "Digitised medication administration & stock control." },
+      { name: "Medication Management e-MAR", href: "/e-mar", description: "Digitised medication administration & stock control." },
       { name: "Incident Management", href: "/incident-management", description: "Log, track & report care incidents." },
-      { name: "Compliance & Reports", href: "/cqc-compliance", description: "CQC-aligned dashboards & audits." },
-      { name: "Staff & Rota Management", href: "/staff-rota-management", description: "Intelligent scheduling, leave & workforce tracking." },
+      { name: "CQC Compliance, Reporting & Analytics", href: "/cqc-compliance", description: "CQC-aligned dashboards & audits." },
+      { name: "Staff Rota Management", href: "/staff-rota-management", description: "Personalised care plans & digital assessments." },
     ],
   },
-  { name: "Resources", href: "/blog" },
+  { name: "Insights", href: "/blog" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ]
@@ -123,20 +123,25 @@ export function Header() {
 
                   {/* Dropdown Menu */}
                   {dropdownOpen && (
-                    <div className="absolute left-1/2 top-full z-10 mt-3 w-80 -translate-x-1/2 rounded-2xl border border-border bg-card p-4 shadow-xl shadow-primary/5 ring-1 ring-black/5 animate-in fade-in slide-in-from-top-2 duration-200">
-                      <div className="grid gap-4">
+                    <div className="absolute left-1/2 top-full z-10 mt-3 w-[380px] -translate-x-1/2 rounded border border-slate-100 bg-white p-6 shadow-xl shadow-primary/5 ring-1 ring-black/5 animate-in fade-in slide-in-from-top-2 duration-200">
+                      {/* Products Title and Divider */}
+                      <div className="pb-3 border-b border-slate-200/60 mb-4">
+                        <span className="text-base font-semibold text-slate-800 tracking-wide block">
+                          Products
+                        </span>
+                      </div>
+
+                      {/* Links List */}
+                      <div className="flex flex-col gap-2">
                         {item.dropdown.map((subItem) => (
                           <Link
                             key={subItem.name}
                             href={subItem.href}
                             onClick={() => setDropdownOpen(false)}
-                            className="group flex flex-col gap-1 rounded-xl p-3 hover:bg-secondary/65 transition-colors"
+                            className="group flex flex-col justify-center rounded py-1.5 px-3 hover:bg-slate-100 transition-colors"
                           >
-                            <span className="text-base font-semibold text-primary group-hover:text-primary transition-colors">
+                            <span className="text-base font-small text-slate-700 group-hover:text-primary transition-colors">
                               {subItem.name}
-                            </span>
-                            <span className="text-sm text-muted-foreground leading-normal">
-                              {subItem.description}
                             </span>
                           </Link>
                         ))}

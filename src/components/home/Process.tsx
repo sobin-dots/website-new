@@ -36,7 +36,7 @@ export function Process() {
 
         {/* Header Block */}
         <div className="text-center max-w-3xl mx-auto space-y-5 mb-20">
-          <div className="inline-flex items-center rounded-full bg-[#C0714F]/10 px-4 py-1.5 text-xs font-bold text-[#C0714F] tracking-wide">
+          <div className="inline-flex items-center rounded-full bg-secondary/10 px-4 py-1.5 text-xs font-bold text-secondary border border-secondary tracking-wide">
             Simple process
           </div>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">

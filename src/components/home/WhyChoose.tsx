@@ -7,32 +7,32 @@ const pillars = [
   {
     image: "/images/home-page/person-centered-care.png",
     title: "Person-Centered Care",
-    description: "Support individual needs with flexible care planning."
+    description: "Deliver personalised, outcome-focused care by keeping every resident's preferences, goals, needs, and care history accessible to every caregiver."
   },
   {
     image: "/images/home-page/designed-for-front- line-teams.png",
-    title: "Designed for front-line Teams",
-    description: "Simple interfaces carers actually enjoy using."
+    title: "Designed for front- line Teams",
+    description: "Built with carers and nurses in mind, intuitive workflows simplify daily tasks, reduce paperwork, and support confident care delivery."
   },
   {
     image: "/images/home-page/compliance-confidence.png",
     title: "Compliance Confidence",
-    description: "Stay prepared for inspections and audits."
+    description: "Stay inspection-ready with complete audit trails, accurate digital records, and workflows aligned to CQC expectations and regulatory best practices."
   },
   {
     image: "/images/home-page/real-time-oversight.png",
     title: "Real-Time Oversight",
-    description: "Know what's happening across your service instantly."
+    description: "Gain instant visibility into care delivery, incidents, medication, staffing, and compliance through live dashboards, alerts, and actionable insights."
   },
   {
     image: "/images/home-page/secure-reliable.png",
     title: "Secure & Reliable",
-    description: "Built with security and scalability in mind."
+    description: "Protect sensitive care data with enterprise-grade security, role-based access, encrypted records, and dependable cloud infrastructure you can trust."
   },
   {
     image: "/images/home-page/continuous-innovation.png",
     title: "Continuous Innovation",
-    description: "Regular updates based on care provider feedback."
+    description: "We're constantly enhancing Cantra with new features, customer feedback, and evolving care standards to support the future of care delivery."
   }
 ]
 

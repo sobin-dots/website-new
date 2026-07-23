@@ -1,60 +1,47 @@
 'use client'
 
-
-import { CheckCircle, ClipboardList, Eye, Lock, FileCheck, Globe } from "lucide-react"
+import { ShieldCheck, ClipboardList, Eye, Shield, FileCheck, Globe } from "lucide-react"
 
 const cards = [
   {
-    icon: CheckCircle,
-    iconColor: "text-[#A87932]",
-    bgColor: "bg-[#FAF7F2]", // Warm Amber tint
-    category: "Audit Ready",
-    categoryColor: "text-[#A87932]",
+    icon: ShieldCheck,
+    bgColor: "bg-[#FDFAF5]", // Figma: #FDFAF5
+    metric: "99.9%",
     title: "Platform Availability",
     description: "Reliable access whenever your teams need it."
   },
   {
     icon: ClipboardList,
-    iconColor: "text-[#B2386E]",
-    bgColor: "bg-[#FCEDF6]", // Light Pink tint
-    category: "Audit Ready",
-    categoryColor: "text-[#B2386E]",
+    bgColor: "bg-[#FFEDF9]", // Figma: #FFEDF9
+    metric: "50%",
     title: "Less Administrative Work",
     description: "Reduce paperwork and repetitive processes."
   },
   {
     icon: Eye,
-    iconColor: "text-[#307066]",
-    bgColor: "bg-[#F2F7F6]", // Light Slate-Teal tint
-    category: "Real-Time",
-    categoryColor: "text-[#307066]",
+    bgColor: "bg-[#F5F8F7]", // Figma: #F5F8F7
+    metric: "Real-Time",
     title: "Care Visibility",
     description: "Track care delivery as it happens."
   },
   {
-    icon: Lock,
-    iconColor: "text-[#1D4ED8]",
-    bgColor: "bg-[#EDF5FD]", // Light Blue tint
-    category: "Secure",
-    categoryColor: "text-[#1D4ED8]",
+    icon: Shield,
+    bgColor: "bg-[#EEF8FF]", // Figma: #EEF8FF
+    metric: "Secure",
     title: "Cloud-Based Infrastructure",
     description: "Protected data and role-based access."
   },
   {
     icon: FileCheck,
-    iconColor: "text-[#15803D]",
-    bgColor: "bg-[#F1F9F5]", // Light Mint tint
-    category: "Audit Ready",
-    categoryColor: "text-[#15803D]",
+    bgColor: "bg-[#F1FCF3]", // Figma: #F1FCF3
+    metric: "Audit Ready",
     title: "Compliance Reporting",
     description: "Evidence care delivery with confidence."
   },
   {
     icon: Globe,
-    iconColor: "text-[#C0714F]",
-    bgColor: "bg-[#FAF3EF]", // Light Beige/Terracotta tint
-    category: "One Platform",
-    categoryColor: "text-[#C0714F]",
+    bgColor: "bg-[#FAF5F2]", // Figma: #FAF5F2
+    metric: "One Platform",
     title: "Connected Care Operations",
     description: "From assessments to reporting."
   }
@@ -62,42 +49,42 @@ const cards = [
 
 export function Outcomes() {
   return (
-    <section className="py-24 bg-white text-slate-900 border-slate-100">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+    <section className="py-24 bg-white text-slate-900">
+      <div className="mx-auto max-w-[1157px] px-6 md:px-8">
 
-        {/* Header Block */}
-        <div className="text-center max-w-3xl mx-auto space-y-5 mb-20">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
+        {/* Header Block (Figma Frame 437) */}
+        <div className="text-center max-w-[730px] mx-auto space-y-4 mb-[50px]">
+          <h2 className="text-[40px] font-bold text-[#3D5D58] leading-[61px] tracking-tight font-sans text-center">
             Built to support better outcomes.
           </h2>
-          <p className="text-base md:text-lg text-slate-500 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-[16.3855px] font-normal text-[#5D5D5D] leading-[29px] text-center font-body">
             Cantra helps adult social care providers to manage care plans, medication records, assessments, incidents, compliance, and reporting - all from a single platform.
           </p>
         </div>
 
-        {/* 6-Card Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* 6-Card Grid (Figma Frame 447) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {cards.map((card, idx) => {
             const IconComp = card.icon
             return (
               <div
                 key={idx}
-                className={`flex items-start gap-4 p-8 rounded-2xl border border-slate-50/50 ${card.bgColor} shadow-sm transition-transform duration-300 hover:-translate-y-1`}
+                className={`flex flex-row items-center gap-[20px] p-[20px] rounded-[26px] ${card.bgColor} w-full max-w-[369.67px] h-[183px] transition-transform duration-300 hover:-translate-y-1 shadow-sm border border-slate-100/50`}
               >
-                {/* White Circle Icon Wrapper */}
-                <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm ${card.iconColor}`}>
+                {/* Left: White Circle Icon Wrapper (Figma: 32px width/height, 20px border-radius, background #FFFFFF) */}
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#3D5D58] shadow-sm">
                   <IconComp className="h-5 w-5" />
                 </div>
 
-                {/* Text Content */}
-                <div className="space-y-1.5">
-                  <span className={`text-[10px] font-bold uppercase tracking-wider ${card.categoryColor}`}>
-                    {card.category}
-                  </span>
-                  <h3 className="text-base font-bold text-primary leading-tight">
+                {/* Right: Text Content Stack (Figma Frame 433) */}
+                <div className="flex flex-col justify-center items-start gap-[9.93px] w-[249px]">
+                  <div className="text-[19.8646px] font-bold text-[#3D5D58] leading-[18px] tracking-tight">
+                    {card.metric}
+                  </div>
+                  <h3 className="text-[14.8985px] font-semibold text-[#3D5D58] leading-[18px] tracking-tight">
                     {card.title}
                   </h3>
-                  <p className="text-xs text-slate-500 leading-relaxed">
+                  <p className="text-[12px] font-normal text-[#5D5D5D] leading-[18px]">
                     {card.description}
                   </p>
                 </div>
