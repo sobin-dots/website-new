@@ -8,23 +8,23 @@ const metrics = [
     label: "Reduction in documentation time"
   },
   {
-    value: "3.2*",
-    label: "Faster care plan creation"
+    value: "15+",
+    label: "Hours saved per carer weekly"
+  },
+  {
+    value: "£250",
+    label: "Annual savings per resident"
   },
   {
     value: "12K+",
-    label: "Reduction in documentation time"
-  },
-  {
-    value: "99.9%",
-    label: "Reduction in documentation time"
+    label: "Residents served"
   }
 ]
 
 export function Stats() {
   return (
     <section className="py-20 bg-secondary text-white">
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+      <div className="mx-auto max-w-7xl px-4 md:px-8">
 
         {/* Top Centered Label */}
         <div className="text-center mb-14">
@@ -34,23 +34,26 @@ export function Stats() {
         </div>
 
         {/* Metrics Grid with Vertical Dividers */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-12">
+        <div className="grid grid-cols-4 gap-x-2 gap-y-6 md:gap-x-6 justify-items-center">
           {metrics.map((metric, idx) => (
             <div
               key={idx}
-              className={`flex flex-col items-center text-center px-4 relative ${idx < 3 ? "lg:after:content-[''] lg:after:absolute lg:after:right-0 lg:after:top-2 lg:after:bottom-2 lg:after:w-[1px] lg:after:bg-white/25" : ""
-                } ${idx % 2 === 0 ? "md:after:content-[''] md:after:absolute md:after:right-0 md:after:top-2 md:after:bottom-2 md:after:w-[0px] md:after:bg-white/25" : "" // responsive dividers
-                }`}
+              className="flex flex-col items-center text-center px-1 sm:px-4 relative w-full"
             >
               {/* Metric Value */}
-              <div className="text-2xl text-[#FAF3EB] md:text-5xl lg:text-[52px] font-bold tracking-tight leading-none">
+              <div className="text-xl sm:text-2xl md:text-5xl lg:text-[52px] text-[#FAF3EB] font-bold tracking-tight leading-none">
                 {metric.value}
               </div>
 
               {/* Metric Label */}
-              <p className="text-[11px] md:text-xs text-[#FAF3EB] mt-4 max-w-[170px] leading-relaxed">
+              <p className="text-[9px] sm:text-[10px] md:text-xs text-[#FAF3EB] mt-3 sm:mt-4 max-w-[170px] leading-relaxed">
                 {metric.label}
               </p>
+
+              {/* Divider lines between columns */}
+              {idx < 3 && (
+                <div className="absolute right-0 top-1 bottom-1 w-[1px] bg-white/20" />
+              )}
             </div>
           ))}
         </div>

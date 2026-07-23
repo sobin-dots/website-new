@@ -22,7 +22,7 @@ export function Showcase() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
           {/* Left Column: Copy & CTAs */}
-          <div className="lg:col-span-5 space-y-8">
+          <div className="lg:col-span-5 space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <span className="text-sm font-small tracking-wide leading-[2.5]">
                 Built for Modern Care
@@ -30,13 +30,13 @@ export function Showcase() {
               <h2 className="text-4xl md:text-5xl font-serif italic text-white font-normal leading-[1.15]">
                 See Cantra in Action
               </h2>
-              <p className="text-base md:text-lg text-[#DCE8E5] leading-relaxed max-w-lg">
+              <p className="text-base md:text-lg text-[#DCE8E5] leading-relaxed max-w-lg mx-auto lg:mx-0">
                 Explore how Cantra simplifies care delivery, supports carers, and gives managers complete operational visibility.
               </p>
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap gap-4 pt-2">
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
               <Button
                 variant="default"
                 size="lg"

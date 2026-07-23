@@ -36,10 +36,10 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 md:px-8 pt-14 pb-10">
 
         {/* Main grid: Logo col + 4 nav cols */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-12">
 
           {/* Brand Column */}
-          <div className="lg:col-span-2 space-y-5">
+          <div className="col-span-2 lg:col-span-2 space-y-5">
             {/* Logo */}
             <Link href="/" className="inline-block">
               {/* eslint-disable-next-line @next/next/no-img-element */}

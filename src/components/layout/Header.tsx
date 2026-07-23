@@ -90,7 +90,7 @@ export function Header() {
           : "absolute top-0 left-0 border-b border-transparent bg-transparent"
         : "sticky top-0 bg-white/95 backdrop-blur-md border-slate-100"
     )}>
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 md:px-8">
+      <div className="mx-auto flex h-16 md:h-20 max-w-7xl items-center justify-between px-6 md:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
           <Image
@@ -198,7 +198,7 @@ export function Header() {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-20 z-45 h-[calc(100vh-5rem)] w-full border-t border-border bg-background px-6 py-8 md:hidden animate-in fade-in slide-in-from-top-4 duration-300">
+        <div className="fixed inset-0 top-16 md:top-20 z-45 h-[calc(100vh-4rem)] md:h-[calc(100vh-5rem)] w-full border-t border-border bg-background px-6 py-8 md:hidden animate-in fade-in slide-in-from-top-4 duration-300">
           <nav className="flex flex-col gap-6">
             {navigation.map((item) => (
               <div key={item.name} className="flex flex-col gap-2">

@@ -49,7 +49,7 @@ const cards = [
 
 export function Outcomes() {
   return (
-    <section className="py-24 bg-white text-slate-900">
+    <section className="py-6 bg-white text-slate-900">
       <div className="mx-auto max-w-[1157px] px-6 md:px-8">
 
         {/* Header Block (Figma Frame 437) */}
@@ -69,7 +69,7 @@ export function Outcomes() {
             return (
               <div
                 key={idx}
-                className={`flex flex-row items-center gap-[20px] p-[20px] rounded-[26px] ${card.bgColor} w-full max-w-[369.67px] h-[183px] transition-transform duration-300 hover:-translate-y-1 shadow-sm border border-slate-100/50`}
+                className={`flex flex-row items-center gap-[12px] sm:gap-[20px] p-[16px] sm:p-[20px] rounded-[26px] ${card.bgColor} w-full max-w-[369.67px] min-h-[183px] h-auto transition-transform duration-300 hover:-translate-y-1 shadow-sm border border-slate-100/50`}
               >
                 {/* Left: White Circle Icon Wrapper (Figma: 32px width/height, 20px border-radius, background #FFFFFF) */}
                 <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#3D5D58] shadow-sm">
