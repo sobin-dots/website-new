@@ -57,7 +57,7 @@ export function RotaWorkflow() {
           {/* Left Column (Group 15 / Graphic Collage) */}
           <div className="lg:col-span-6 flex justify-center items-center overflow-visible py-2">
             {/* Aspect container that scales cleanly and occupies less vertical height */}
-            <div className="relative w-[586px] h-[568.14px] shrink-0 scale-[0.55] sm:scale-[0.7] lg:scale-[0.8] xl:scale-[0.85] origin-center my-[-120px] sm:my-[-80px] lg:my-[-40px]">
+            <div className="relative w-[586px] h-[568.14px] shrink-0 scale-[0.48] xs:scale-[0.55] sm:scale-[0.7] lg:scale-[0.8] xl:scale-[0.85] origin-center my-[-140px] xs:my-[-120px] sm:my-[-80px] lg:my-[-40px]">
               
               {/* Main Illustration Image */}
               <div className="absolute left-[104.92px] top-0 w-[377.27px] h-[568.14px] rounded-[10px] overflow-hidden">

@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from "react"
 import { IncidentHero } from "@/components/incident-management/IncidentHero"
 import { IncidentOpportunity } from "@/components/incident-management/IncidentOpportunity"
 import { IncidentTools } from "@/components/incident-management/IncidentTools"
@@ -13,7 +12,7 @@ import { CareServiceCTA } from "@/components/care-service-types/CareServiceCTA"
 export default function IncidentManagementPage() {
   return (
     <div className="min-h-screen pt-5 bg-white text-[#293836]">
-      
+
       {/* Centralized Page Container with Standard Max-Width & Padding */}
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16 md:space-y-20">
         {/* 1. Hero Header */}
