@@ -7,7 +7,7 @@ import { ArrowUpRight } from "lucide-react"
 export function EmarCTA() {
   return (
     <section className="py-20 md:py-24 bg-primary text-white text-center">
-      <div className="mx-auto max-w-4xl px-6 md:px-8 space-y-8">
+      <div className="mx-auto max-w-4xl px-6 md:px-8 space-y-8 scroll-section">
         
         {/* Copy */}
         <div className="space-y-4 max-w-3xl mx-auto">

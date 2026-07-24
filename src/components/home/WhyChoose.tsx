@@ -42,7 +42,7 @@ export function WhyChoose() {
       <div className="mx-auto max-w-7xl px-6 md:px-8">
 
         {/* Header Block */}
-        <div className="text-center max-w-3xl mx-auto space-y-5 mb-12 sm:mb-20">
+        <div className="text-center max-w-3xl mx-auto space-y-5 mb-12 sm:mb-20 scroll-section">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
             Why Care Providers Choose Cantra
           </h2>
@@ -52,7 +52,7 @@ export function WhyChoose() {
         </div>
 
         {/* 6-Pillar Layout (Alternating horizontal rows on mobile, 3-column grid on desktop) */}
-        <div className="flex flex-col gap-10 sm:gap-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16">
+        <div className="flex flex-col gap-10 sm:gap-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:gap-y-16 scroll-section">
           {pillars.map((pillar, idx) => {
             const isOdd = idx % 2 === 1;
             return (

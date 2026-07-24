@@ -115,7 +115,7 @@ export function IncidentWorkflow() {
       <div className="w-full">
         
         {/* Header Section */}
-        <div className="text-center max-w-3xl mx-auto space-y-3">
+        <div className="text-center max-w-3xl mx-auto space-y-3 scroll-section">
           <h2 className="text-2xl sm:text-3xl md:text-[34px] font-bold leading-snug tracking-tight text-[#233230]">
             From Incident To Resolution In One Connected Workflow
           </h2>
@@ -125,7 +125,7 @@ export function IncidentWorkflow() {
         </div>
 
         {/* Desktop View (Interactive S-Curve Layout matching design exactly) */}
-        <div className="hidden md:block relative w-full max-w-[720px] mx-auto h-[740px]">
+        <div className="hidden md:block relative w-full max-w-[720px] mx-auto h-[740px] scroll-section">
           
           {/* Curved SVG Line passing through centers of badges */}
           <svg
@@ -193,7 +193,7 @@ export function IncidentWorkflow() {
         </div>
 
         {/* Mobile View (Clean Vertical Flow) */}
-        <div className="block md:hidden space-y-10">
+        <div className="block md:hidden space-y-10 scroll-section">
           {workflowSteps.map((item) => (
             <div key={item.step} className="flex items-start space-x-4 bg-slate-50/50 p-4 rounded-xl border border-slate-100 cursor-pointer transition-all duration-200 hover:bg-slate-100/60">
               <div className="shrink-0 w-14 h-14 rounded-full bg-white border border-slate-100 flex items-center justify-center shadow-md">

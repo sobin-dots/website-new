@@ -53,7 +53,7 @@ export function Outcomes() {
       <div className="mx-auto max-w-[1157px] px-6 md:px-8">
 
         {/* Header Block (Figma Frame 437) */}
-        <div className="text-center max-w-[730px] mx-auto space-y-4 mb-[50px]">
+        <div className="text-center max-w-[730px] mx-auto space-y-4 mb-[50px] scroll-section">
           <h2 className="text-[40px] font-bold text-[#3D5D58] leading-[61px] tracking-tight font-sans text-center">
             Built to support better outcomes.
           </h2>
@@ -63,7 +63,7 @@ export function Outcomes() {
         </div>
 
         {/* 6-Card Grid (Figma Frame 447) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center scroll-section">
           {cards.map((card, idx) => {
             const IconComp = card.icon
             return (

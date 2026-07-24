@@ -10,7 +10,7 @@ export function CareFeatures() {
       <div className="w-full space-y-16 sm:space-y-24 md:space-y-32">
         
         {/* Intro Centered Section (Frame 863 & 860) */}
-        <div className="text-center max-w-[893px] mx-auto space-y-3 sm:space-y-4">
+        <div className="text-center max-w-[893px] mx-auto space-y-3 sm:space-y-4 scroll-section">
           <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
             Supporting Every Step of Care Delivery
           </h2>
@@ -23,7 +23,7 @@ export function CareFeatures() {
         <div className="space-y-16 sm:space-y-24 md:space-y-32">
 
           {/* Block 1: Risk Assessments (Image Left, Text Right) - Frame 856 */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
             {/* Image Wrapper */}
             <div className="lg:col-span-6 relative w-full h-[260px] sm:h-[380px] md:h-[480px] rounded-[16px] sm:rounded-[20px] overflow-hidden">
               <Image 
@@ -49,7 +49,7 @@ export function CareFeatures() {
           </div>
 
           {/* Block 2: Person-Centred Care Plans (Text Left, Visual Right) - Frame 858 */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
             {/* Text Copy */}
             <div className="lg:col-span-6 space-y-2 sm:space-y-3 max-w-[563px] lg:order-1 order-2">
               <h3 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[50px] capitalize text-[#293836] font-['Lato',sans-serif]">
@@ -105,7 +105,7 @@ export function CareFeatures() {
           </div>
 
           {/* Block 3: Observations (Image Left, Text Right) - Frame 859 */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
             {/* Visual Collage (Frame 2248) */}
             <div className="lg:col-span-6 flex flex-col gap-2.5 sm:gap-3 max-w-[571px] mx-auto w-full">
               {/* Row 1: Two Side-by-Side Images */}
@@ -156,7 +156,7 @@ export function CareFeatures() {
           </div>
 
           {/* Block 4: Version History (Text Left, Image Right) - Frame 860 */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
             {/* Text Copy */}
             <div className="lg:col-span-6 space-y-2 sm:space-y-3 max-w-[571px] lg:order-1 order-2">
               <h3 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[50px] capitalize text-[#293836] font-['Lato',sans-serif]">
@@ -225,7 +225,7 @@ export function CareFeatures() {
           </div>
 
           {/* Block 5: Client & Family Input (Image Left, Text Right) - Frame 1875 */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
             {/* Visual Stack (Frame 1778) */}
             <div className="lg:col-span-6 flex flex-col gap-2.5 sm:gap-3 max-w-[571px] mx-auto w-full">
               <div className="relative w-full aspect-[2.2] rounded-[14px] sm:rounded-[20px] overflow-hidden">

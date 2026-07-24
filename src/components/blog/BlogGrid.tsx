@@ -19,7 +19,7 @@ export function BlogGrid() {
       <div className="mx-auto max-w-7xl px-6 md:px-8 space-y-12">
         
         {/* Category Header with Sort Filter */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-slate-100 scroll-section">
           <div className="space-y-1">
             <h2 className="text-xl font-bold text-primary font-sans">
               All Articles
@@ -37,7 +37,7 @@ export function BlogGrid() {
         </div>
 
         {/* 3x3 Card Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 scroll-section">
           {articles.map((art, idx) => (
             <article 
               key={idx}
@@ -79,7 +79,7 @@ export function BlogGrid() {
         </div>
 
         {/* Pagination Block */}
-        <div className="flex items-center justify-center gap-2 pt-12">
+        <div className="flex items-center justify-center gap-2 pt-12 scroll-section">
           {/* Prev Arrow */}
           <button className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-400 hover:bg-slate-50 transition-colors">
             <ChevronLeft className="h-4 w-4" />

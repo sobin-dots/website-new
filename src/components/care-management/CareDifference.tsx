@@ -55,7 +55,7 @@ export function CareDifference() {
       <div className="w-full">
         
         {/* Heading Grid Block */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16 pb-8 border-b border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16 pb-8 border-b border-slate-100 scroll-section">
           {/* Left Heading */}
           <div className="lg:col-span-7 space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
@@ -72,7 +72,7 @@ export function CareDifference() {
         </div>
 
         {/* 3-Column Benefits Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 scroll-section">
           {benefits.map((benefit, idx) => {
             const IconComp = benefit.icon
             return (

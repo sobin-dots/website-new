@@ -9,7 +9,7 @@ export function AboutHero() {
       <div className="mx-auto max-w-7xl px-6 md:px-8 space-y-12">
         
         {/* Title Block */}
-        <div className="space-y-5 max-w-3xl mx-auto">
+        <div className="space-y-5 max-w-3xl mx-auto scroll-section">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
             The Heart Of Cantra
           </h1>
@@ -19,7 +19,7 @@ export function AboutHero() {
         </div>
 
         {/* Team Photo Container */}
-        <div className="relative w-full max-w-5xl mx-auto aspect-[16/9] md:aspect-[2.1] overflow-hidden rounded-[32px] animate-in fade-in zoom-in-98 duration-500">
+        <div className="relative w-full max-w-5xl mx-auto aspect-[16/9] md:aspect-[2.1] overflow-hidden rounded-[32px] animate-in fade-in zoom-in-98 duration-500 scroll-section">
           <Image
             src="/images/home-page/the-heart-of-cantra.png"
             alt="The Cantra Team - The Heart of Cantra"

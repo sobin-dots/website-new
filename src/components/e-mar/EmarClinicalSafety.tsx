@@ -41,7 +41,7 @@ export function EmarClinicalSafety() {
         <div className="relative bg-[#FAF5F2] rounded-[20px] p-6 sm:p-10 lg:p-12 space-y-8 sm:space-y-12">
           
           {/* Top 2-Column Row */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center scroll-section">
             
             {/* Left Column Text (6 cols) */}
             <div className="lg:col-span-6 space-y-3">
@@ -67,7 +67,7 @@ export function EmarClinicalSafety() {
           </div>
 
           {/* Bottom 5 Brand Feature Badges Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 scroll-section">
             {safetyBadges.map((badge, idx) => {
               const IconComp = badge.icon
               return (

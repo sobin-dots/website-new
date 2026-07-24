@@ -9,7 +9,7 @@ export function EmarFeatures() {
       <div className="w-full space-y-16 sm:space-y-24 md:space-y-32">
         
         {/* Centered Section Header */}
-        <div className="text-center max-w-[893px] mx-auto space-y-3 sm:space-y-4">
+        <div className="text-center max-w-[893px] mx-auto space-y-3 sm:space-y-4 scroll-section">
           <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
             Smarter Medication Management Starts Here
           </h2>
@@ -22,7 +22,7 @@ export function EmarFeatures() {
         <div className="space-y-16 sm:space-y-24 md:space-y-32">
 
           {/* Block 1: EMAR Charts (Image Left, Copy Right) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
             {/* Left Image (6 cols) */}
             <div className="lg:col-span-6 relative w-full h-[260px] sm:h-[380px] md:h-[480px] rounded-[20px] overflow-hidden">
               <Image 
@@ -50,7 +50,7 @@ export function EmarFeatures() {
 
 
           {/* Block 2: PRN Management (Copy Left, Image Right) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
             {/* Left Copy (6 cols) */}
             <div className="lg:col-span-6 space-y-2 sm:space-y-3 max-w-[563px] lg:order-1 order-2">
               <h3 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[50px] capitalize text-[#293836] font-['Lato',sans-serif]">
@@ -98,7 +98,7 @@ export function EmarFeatures() {
 
 
           {/* Block 3: Medication Instructions (Image Left, Copy Right) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
             {/* Left Image Collage (6 cols) */}
             <div className="lg:col-span-6 relative w-full h-[320px] sm:h-[440px] md:h-[500px] flex items-center justify-center">
               <div className="absolute left-1 sm:left-4 top-[10%] w-[50%] h-[80%] rounded-[20px] overflow-hidden">
@@ -137,7 +137,7 @@ export function EmarFeatures() {
 
 
           {/* Block 4: Smart Alerts (Copy Left, Image Right) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
             {/* Left Copy (6 cols) */}
             <div className="lg:col-span-6 space-y-2 sm:space-y-3 max-w-[563px] lg:order-1 order-2">
               <h3 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[50px] capitalize text-[#293836] font-['Lato',sans-serif]">
@@ -165,7 +165,7 @@ export function EmarFeatures() {
 
 
           {/* Block 5: Stock Control (Image Left, Copy Right) */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
             {/* Left Image Collage (6 cols) */}
             <div className="lg:col-span-6 flex flex-col gap-2.5 sm:gap-3 max-w-[571px] mx-auto w-full">
               <div className="grid grid-cols-2 gap-2.5 sm:gap-3 w-full">

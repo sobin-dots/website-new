@@ -59,7 +59,7 @@ export function RotaPlatform() {
     <section className="py-[48px] px-4 md:px-[48px] bg-white text-[#293836] overflow-hidden flex flex-col items-center justify-center gap-[40px]">
       
       {/* Frame 860: Section Header */}
-      <div className="text-center w-full max-w-[1072px] mx-auto flex flex-col justify-center items-center gap-[24px]">
+      <div className="text-center w-full max-w-[1072px] mx-auto flex flex-col justify-center items-center gap-[24px] scroll-section">
         {/* Frame 746 */}
         <div className="flex flex-col justify-center items-center max-w-[903px] mx-auto">
           <h2 className="text-[32px] font-bold leading-[48px] capitalize text-[#293836] font-['Lato',sans-serif] text-center max-w-[903px]">
@@ -69,7 +69,7 @@ export function RotaPlatform() {
       </div>
 
       {/* Frame 2349 / Interactive Desktop Layout (Visible from md up) */}
-      <div className="hidden md:flex justify-center items-center w-full overflow-hidden py-4">
+      <div className="hidden md:flex justify-center items-center w-full overflow-hidden py-4 scroll-section">
         {/* We use a fixed aspect container scaled for smaller screens but centered at full size */}
         <div className="relative w-[1440px] h-[860px] shrink-0 scale-[0.7] lg:scale-[0.85] xl:scale-100 origin-center my-[-100px] lg:my-[-40px] xl:my-0">
           
@@ -100,7 +100,7 @@ export function RotaPlatform() {
       </div>
 
       {/* Mobile Layout Fallback (Visible on mobile/tablet) */}
-      <div className="md:hidden w-full space-y-8 px-2">
+      <div className="md:hidden w-full space-y-8 px-2 scroll-section">
         <div className="relative w-full aspect-[16/11]">
           <Image
             src="/images/staff-rota-management/one-connected-platform-for.png"
@@ -127,7 +127,7 @@ export function RotaPlatform() {
       </div>
 
       {/* Description Copy */}
-      <div className="w-full max-w-[1082.4px] mx-auto text-center pt-2">
+      <div className="w-full max-w-[1082.4px] mx-auto text-center pt-2 scroll-section">
         <p className="text-sm md:text-[19.2px] font-normal leading-[34px] text-[#293836] capitalize font-['Lato',sans-serif] text-center max-w-[1082.4px] mx-auto">
           From Planning Weekly Rotas And Managing Leave Requests To Filling Last-Minute Vacancies And Tracking Staff Availability, Cantra Gives Care Managers Complete Visibility Over Their Workforce. Reduce Scheduling Conflicts, Minimise Administrative Effort, And Ensure Every Shift Is Staffed With Confidence.
         </p>

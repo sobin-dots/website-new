@@ -13,7 +13,7 @@ export function CqcHero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
           {/* Left Column (7 cols) */}
-          <div className="lg:col-span-6 flex flex-col justify-center items-start gap-5 sm:gap-[30px] max-w-none md:max-w-[680px]">
+          <div className="lg:col-span-6 flex flex-col justify-center items-start gap-5 sm:gap-[30px] max-w-none md:max-w-[680px] scroll-section">
 
             {/* Title & Copy */}
             <div className="flex flex-col items-start gap-3 sm:gap-4">
@@ -55,7 +55,7 @@ export function CqcHero() {
           </div>
 
           {/* Right Column: Featured Caregiver Illustration (5 cols) */}
-          <div className="lg:col-span-6 relative w-full h-[300px] sm:h-[420px] md:h-[480px] lg:h-[540px] max-w-md lg:max-w-none mx-auto mt-4 lg:mt-0 self-end">
+          <div className="lg:col-span-6 relative w-full h-[300px] sm:h-[420px] md:h-[480px] lg:h-[540px] max-w-md lg:max-w-none mx-auto mt-4 lg:mt-0 self-end scroll-section">
             <Image
               src="/images/cqc-compliance/hero-image.png"
               alt="Caregiver holding clipboard with compliance badge icons"

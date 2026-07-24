@@ -9,7 +9,7 @@ export function IncidentOpportunity() {
       <div className="w-full">
         
         {/* Banner container with background image inside */}
-        <div className="relative rounded-[20px] overflow-hidden py-12 sm:py-16 md:py-20 px-6 sm:px-10 lg:px-12 text-white">
+        <div className="relative rounded-[20px] overflow-hidden py-12 sm:py-16 md:py-20 px-6 sm:px-10 lg:px-12 text-white scroll-section">
           <Image
             src="/images/incident-management/every-incident-is-an-opportunity-to-improve-care-bg.png"
             alt="Terracotta background pattern"

@@ -13,7 +13,7 @@ export function ContactInfo() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Office Location Map (6 columns) */}
-          <div className="lg:col-span-6 relative w-full aspect-[1.5] rounded-3xl overflow-hidden shadow-sm animate-in fade-in slide-in-from-left-4 duration-500">
+          <div className="lg:col-span-6 relative w-full aspect-[1.5] rounded-3xl overflow-hidden shadow-sm animate-in fade-in slide-in-from-left-4 duration-500 scroll-section">
             <Image
               src="/images/home-page/visit-or-contact-us.png"
               alt="Office location map - London England United Kingdom"
@@ -24,7 +24,7 @@ export function ContactInfo() {
           </div>
 
           {/* Right Column: Contact Details Grid (6 columns) */}
-          <div className="lg:col-span-6 space-y-8 lg:pl-4 animate-in fade-in slide-in-from-right-4 duration-500">
+          <div className="lg:col-span-6 space-y-8 lg:pl-4 animate-in fade-in slide-in-from-right-4 duration-500 scroll-section">
             
             <h2 className="text-3xl font-bold tracking-tight text-primary leading-tight font-sans">
               Visit Or Contact Us

@@ -32,14 +32,14 @@ export function IncidentImpact() {
       <div className="w-full space-y-12 sm:space-y-16">
         
         {/* Centered Title */}
-        <div className="text-center max-w-[893px] mx-auto">
+        <div className="text-center max-w-[893px] mx-auto scroll-section">
           <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
             The Impact Of Smarter Incident Management
           </h2>
         </div>
 
         {/* 4-Column Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center max-w-[1240px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center max-w-[1240px] mx-auto scroll-section">
           {impacts.map((item, idx) => {
             const IconComp = item.icon
             return (

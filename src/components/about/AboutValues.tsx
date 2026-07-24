@@ -32,7 +32,7 @@ export function AboutValues() {
       <div className="mx-auto max-w-7xl px-6 md:px-8 space-y-16">
         
         {/* Header Block */}
-        <div className="text-center max-w-4xl mx-auto space-y-4">
+        <div className="text-center max-w-4xl mx-auto space-y-4 scroll-section">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
             What Defines Us
           </h2>
@@ -42,7 +42,7 @@ export function AboutValues() {
         </div>
 
         {/* 4-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 scroll-section">
           {values.map((item, idx) => {
             const IconComp = item.icon
             return (

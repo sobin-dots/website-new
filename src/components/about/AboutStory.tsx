@@ -14,7 +14,7 @@ export function AboutStory() {
         </svg>
       </div>
 
-      <div className="mx-auto max-w-4xl px-6 md:px-8 space-y-12 text-center relative z-10">
+      <div className="mx-auto max-w-4xl px-6 md:px-8 space-y-12 text-center relative z-10 scroll-section">
         
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">

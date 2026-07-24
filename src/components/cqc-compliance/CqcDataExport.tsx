@@ -9,7 +9,7 @@ export function CqcDataExport() {
     <section className="py-4 sm:py-8 bg-white text-[#293836] overflow-hidden">
       <div className="w-full">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
           
           {/* Left Column Copy Block (6 cols) */}
           <div className="lg:col-span-6 space-y-4 sm:space-y-6 max-w-[571px]">

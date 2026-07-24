@@ -18,7 +18,7 @@ export function ContactForm() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           {/* Left Column: Contact Form (7 columns) */}
-          <div className="lg:col-span-7 space-y-8 animate-in fade-in slide-in-from-left-4 duration-500">
+          <div className="lg:col-span-7 space-y-8 animate-in fade-in slide-in-from-left-4 duration-500 scroll-section">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-[38px] font-bold tracking-tight text-primary leading-tight">
                 We're Here To Help. <br />How Can We Support You?
@@ -155,7 +155,7 @@ export function ContactForm() {
           </div>
 
           {/* Right Column: Support Graphic Collage (5 columns) */}
-          <div className="lg:col-span-5 relative w-full aspect-[0.9] max-w-md lg:max-w-none mx-auto rounded-[32px] overflow-hidden animate-in fade-in slide-in-from-right-4 duration-500">
+          <div className="lg:col-span-5 relative w-full aspect-[0.9] max-w-md lg:max-w-none mx-auto rounded-[32px] overflow-hidden animate-in fade-in slide-in-from-right-4 duration-500 scroll-section">
             <Image
               src="/images/home-page/how-can-we-support-you.png"
               alt="How can we support you care managers team"

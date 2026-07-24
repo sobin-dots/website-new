@@ -34,7 +34,7 @@ export function Stats() {
         </div>
 
         {/* Metrics Grid with Vertical Dividers */}
-        <div className="grid grid-cols-4 gap-x-2 gap-y-6 md:gap-x-6 justify-items-center">
+        <div className="grid grid-cols-4 gap-x-2 gap-y-6 md:gap-x-6 justify-items-center scroll-section">
           {metrics.map((metric, idx) => (
             <div
               key={idx}
@@ -59,7 +59,7 @@ export function Stats() {
         </div>
 
         {/* Bottom Social Proof Pill */}
-        <div className="mt-16 flex justify-center">
+        <div className="mt-16 flex justify-center scroll-section">
           <div className="inline-flex items-center gap-3 rounded-full border border-white/25 bg-black/10 px-5 py-2.5 backdrop-blur-sm">
             <div className="flex -space-x-2 shrink-0">
               <Image

@@ -22,7 +22,7 @@ export function Showcase() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
 
           {/* Left Column: Copy & CTAs */}
-          <div className="lg:col-span-5 space-y-8 text-center lg:text-left">
+          <div className="lg:col-span-5 space-y-8 text-center lg:text-left scroll-section">
             <div className="space-y-4">
               <span className="text-sm font-small tracking-wide leading-[2.5]">
                 Built for Modern Care
@@ -55,7 +55,7 @@ export function Showcase() {
           </div>
 
           {/* Right Column: Composite Mockup Graphic */}
-          <div className="lg:col-span-7 flex justify-center lg:justify-end">
+          <div className="lg:col-span-7 flex justify-center lg:justify-end scroll-section">
             <Image
               src="/images/home-page/dashboard-image.png"
               alt="Cantra Dashboard Screen Previews"

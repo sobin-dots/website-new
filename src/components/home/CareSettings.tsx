@@ -9,7 +9,7 @@ export function CareSettings() {
       <div className="mx-auto max-w-7xl px-6 md:px-8">
 
         {/* Header Block */}
-        <div className="text-center max-w-3xl mx-auto space-y-5 mb-8">
+        <div className="text-center max-w-3xl mx-auto space-y-5 mb-8 scroll-section">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
             Care Settings We Serve
           </h2>
@@ -19,7 +19,7 @@ export function CareSettings() {
         </div>
 
         {/* Layout Grid */}
-        <div className="space-y-6">
+        <div className="space-y-6 scroll-section">
 
           {/* Top Featured Card - Full Width */}
           <Link

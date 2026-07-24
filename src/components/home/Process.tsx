@@ -35,7 +35,7 @@ export function Process() {
       <div className="mx-auto max-w-7xl px-6 md:px-8">
 
         {/* Header Block */}
-        <div className="text-center max-w-3xl mx-auto space-y-5 mb-20">
+        <div className="text-center max-w-3xl mx-auto space-y-5 mb-20 scroll-section">
           <div className="inline-flex items-center rounded-full bg-secondary/10 px-4 py-1.5 text-xs font-bold text-secondary border border-secondary tracking-wide">
             Simple process
           </div>
@@ -48,7 +48,7 @@ export function Process() {
         </div>
 
         {/* 4-Step Process Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 sm:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 sm:gap-8 scroll-section">
           {steps.map((step, idx) => (
             <div key={idx} className="flex flex-col items-center text-center space-y-5">
               {/* Alternating Color Badge */}

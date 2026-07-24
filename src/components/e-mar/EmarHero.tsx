@@ -14,7 +14,7 @@ export function EmarHero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column (6 cols) */}
-          <div className="lg:col-span-6 flex flex-col justify-center items-start gap-5 sm:gap-[30px] max-w-[596px]">
+          <div className="lg:col-span-6 flex flex-col justify-center items-start gap-5 sm:gap-[30px] max-w-[596px] scroll-section">
             
             {/* Title & Copy */}
             <div className="flex flex-col items-start gap-3 sm:gap-4">
@@ -57,7 +57,7 @@ export function EmarHero() {
 
           {/* Right Column: 3-Image Collage (6 cols) */}
           <div className="lg:col-span-6 w-full mt-4 lg:mt-0">
-            <div className="grid grid-cols-2 gap-4 items-stretch">
+            <div className="grid grid-cols-2 gap-4 items-stretch scroll-section">
               
               {/* Left Sub-column (2 stacked photos) */}
               <div className="space-y-4 flex flex-col justify-between">

@@ -30,7 +30,7 @@ export function ResidentialCareHomes() {
         <div className="flex flex-col items-center justify-center gap-[20px] max-w-[1166px] mx-auto text-center">
 
           {/* Frame 2280 / Frame 744 & 745: Titles */}
-          <div className="flex flex-col items-center justify-center max-w-[1166px]">
+          <div className="flex flex-col items-center justify-center max-w-[1166px] scroll-section">
             {/* Title: H1 */}
             <h1 className="text-3xl sm:text-4xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
               Residential Care Homes
@@ -42,7 +42,7 @@ export function ResidentialCareHomes() {
           </div>
 
           {/* Rectangle 120: Featured Center Image */}
-          <div className="relative w-full max-w-[900px] h-[240px] sm:h-[360px] md:h-[502px] rounded-[20px] overflow-hidden shadow-sm mx-auto">
+          <div className="relative w-full max-w-[900px] h-[240px] sm:h-[360px] md:h-[502px] rounded-[20px] overflow-hidden shadow-sm mx-auto scroll-section">
             <Image
               src="/images/care-service-types/residential-care-homes.png"
               alt="Caregivers serving tea and playing board games with senior residents in residential care home"
@@ -54,7 +54,7 @@ export function ResidentialCareHomes() {
           </div>
 
           {/* Paragraph Description */}
-          <div className="max-w-[900px] mx-auto">
+          <div className="max-w-[900px] mx-auto scroll-section">
             <p className="text-sm md:text-base font-normal leading-[27px] text-[#293836] capitalize font-['Inter',sans-serif]">
               Residential care homes focus on helping residents live comfortably, safely, and independently. Cantra streamlines daily care delivery by giving teams easy access to personalised care plans, daily tasks, observations, activities, family communication, and digital records—all from one connected platform.
             </p>
@@ -66,14 +66,14 @@ export function ResidentialCareHomes() {
         <div className="flex flex-col items-center gap-[20px] max-w-[1166px] mx-auto rounded-[20px]">
 
           {/* Frame 746: Key Capabilities Header */}
-          <div className="flex flex-col justify-center items-center w-full bg-white">
+          <div className="flex flex-col justify-center items-center w-full bg-white scroll-section">
             <h3 className="text-xl sm:text-2xl md:text-[24px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif] text-center">
               Key Capabilities
             </h3>
           </div>
 
           {/* Capabilities Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 gap-x-6 lg:gap-x-10 max-w-[1090px] w-full mx-auto bg-white">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 gap-x-6 lg:gap-x-10 max-w-[1090px] w-full mx-auto bg-white scroll-section">
             {capabilitiesRow1.concat(capabilitiesRow2).map((title, idx) => (
               <div key={idx} className="flex items-center gap-[10px] min-w-0">
                 <GreenCheckboxIcon />
@@ -87,7 +87,7 @@ export function ResidentialCareHomes() {
         </div>
 
         {/* Bottom Outlined Callout Box */}
-        <div className="mt-8 p-6 md:p-10 rounded-[20px] border border-[#3D5D58] bg-white flex flex-col lg:flex-row items-center justify-between gap-6 max-w-[1166px] mx-auto">
+        <div className="mt-8 p-6 md:p-10 rounded-[20px] border border-[#3D5D58] bg-white flex flex-col lg:flex-row items-center justify-between gap-6 max-w-[1166px] mx-auto scroll-section">
           <p className="text-sm md:text-base font-normal leading-[27px] text-[#293836] max-w-3xl font-['Inter',sans-serif]">
             Cantra simplifies every stage of care delivery, from personalised care plans and daily routines to resident observations, activities, family communication, and compliance. By bringing everything together in one connected platform, care teams can spend less time on administration and more time delivering meaningful, person-centred support.
           </p>

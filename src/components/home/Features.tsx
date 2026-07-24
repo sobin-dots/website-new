@@ -36,7 +36,7 @@ export function Features() {
       <div className="mx-auto max-w-7xl px-6 md:px-8">
 
         {/* Heading Section */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-20">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-20 scroll-section">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
             Everything Your Care Team Needs
           </h2>
@@ -46,7 +46,7 @@ export function Features() {
         </div>
 
         {/* Features Flat Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 sm:gap-x-8 sm:gap-y-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 sm:gap-x-8 sm:gap-y-16 scroll-section">
           {coreFeatures.map((feat, idx) => {
             const IconComp = feat.icon
             return (

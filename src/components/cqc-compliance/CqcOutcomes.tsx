@@ -32,7 +32,7 @@ export function CqcOutcomes() {
       <div className="w-full">
 
         {/* Header Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start mb-12 pb-6 border-b border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start mb-12 pb-6 border-b border-slate-100 scroll-section">
           <div className="lg:col-span-6 space-y-2">
             <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[50px] capitalize text-[#293836] font-['Lato',sans-serif]">
               Key Outcomes
@@ -47,7 +47,7 @@ export function CqcOutcomes() {
         </div>
 
         {/* 2x2 Outcomes Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 scroll-section">
           {outcomes.map((item, idx) => {
             const IconComp = item.icon
             return (

@@ -14,7 +14,7 @@ export function CareHero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
           {/* Left Column: Heading, Subtitle & CTAs (6 columns) */}
-          <div className="lg:col-span-6 flex flex-col justify-center items-start gap-5 sm:gap-[30px] max-w-[596px]">
+          <div className="lg:col-span-6 flex flex-col justify-center items-start gap-5 sm:gap-[30px] max-w-[596px] scroll-section">
             
             {/* Title & Copy (Frame 746 & 744) */}
             <div className="flex flex-col items-start gap-3 sm:gap-4">
@@ -54,7 +54,7 @@ export function CareHero() {
           </div>
 
           {/* Right Column: Hero Graphic Layer Stack (Frame 1860) */}
-          <div className="lg:col-span-6 relative w-full h-[350px] sm:h-[480px] md:h-[560px] lg:h-[600px] flex items-center justify-center mt-4 lg:mt-0">
+          <div className="lg:col-span-6 relative w-full h-[350px] sm:h-[480px] md:h-[560px] lg:h-[600px] flex items-center justify-center mt-4 lg:mt-0 scroll-section">
             
             {/* 1. Dark Green Arch Background (Rectangle 82) */}
             <div className="absolute right-0 bottom-0 w-[82%] sm:w-[78%] h-[82%] sm:h-[84%] bg-[#3D5D58] rounded-t-[130px] sm:rounded-t-[200px] rounded-br-none rounded-bl-[32px] sm:rounded-bl-[42px] z-0" />

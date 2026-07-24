@@ -30,14 +30,14 @@ export function IncidentStages() {
         <div className="bg-[#FAF5F2] rounded-[20px] p-6 sm:p-10 lg:p-12 space-y-12 sm:space-y-16">
           
           {/* Centered Header */}
-          <div className="text-center max-w-[893px] mx-auto">
+          <div className="text-center max-w-[893px] mx-auto scroll-section">
             <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
               Supporting Every Stage Of Incident Management
             </h2>
           </div>
 
           {/* 3 Vertical Stacked Cards */}
-          <div className="space-y-12 sm:space-y-16">
+          <div className="space-y-12 sm:space-y-16 scroll-section">
             {stages.map((item, idx) => {
               const IconComp = item.icon
               return (

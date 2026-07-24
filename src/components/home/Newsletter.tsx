@@ -14,7 +14,7 @@ export function Newsletter() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
 
         {/* Rounded Sand Card Container */}
-        <div className="bg-[#FAF3EB] rounded-[32px] overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <div className="bg-[#FAF3EB] rounded-[32px] overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch scroll-section">
 
           {/* Left Column: Form & Copy */}
           <div className="lg:col-span-7 p-6 sm:p-10 md:p-12 lg:p-16 flex flex-col justify-center items-center lg:items-start text-center lg:text-left space-y-6">

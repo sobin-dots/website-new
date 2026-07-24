@@ -10,7 +10,7 @@ export function CqcFeatures() {
       <div className="w-full space-y-16 sm:space-y-24 md:space-y-32">
 
         {/* Block 1: Compliance Evidence (Image Left, Copy Right) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
 
           {/* Left Image Collage (6 cols) */}
           <div className="lg:col-span-6 relative w-full h-[320px] sm:h-[440px] md:h-[500px] flex items-center justify-center">
@@ -78,7 +78,7 @@ export function CqcFeatures() {
 
 
         {/* Block 2: Automatic Mapping To CQC Quality Statements (Copy Left, Image Right) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
 
           {/* Left Copy Block (6 cols) */}
           <div className="lg:col-span-6 space-y-4 sm:space-y-6 max-w-[563px] lg:order-1 order-2">
@@ -146,7 +146,7 @@ export function CqcFeatures() {
 
 
         {/* Block 3: PIR Prep (Image Left, Copy Right) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
 
           {/* Left Image Collage (6 cols) */}
           <div className="lg:col-span-6 relative w-full h-[320px] sm:h-[440px] md:h-[500px] flex items-center justify-center">
@@ -214,7 +214,7 @@ export function CqcFeatures() {
 
 
         {/* Block 4: Regulation Breach Risk Alerts (Copy Left, Image Right) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
 
           {/* Left Copy Block (6 cols) */}
           <div className="lg:col-span-6 space-y-4 sm:space-y-6 max-w-[563px] lg:order-1 order-2">

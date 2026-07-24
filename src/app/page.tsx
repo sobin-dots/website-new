@@ -166,54 +166,34 @@ export default function Home() {
 
 
       {/* Core Features Section */}
-      <div className="scroll-section">
-        <Features />
-      </div>
+      <Features />
 
       {/* Care Settings We Serve Section */}
-      <div className="scroll-section">
-        <CareSettings />
-      </div>
+      <CareSettings />
 
       {/* See Cantra in Action Showcase Section */}
-      <div className="scroll-section">
-        <Showcase />
-      </div>
+      <Showcase />
 
       {/* Process Onboarding Section */}
-      <div className="scroll-section">
-        <Process />
-      </div>
+      <Process />
 
       {/* Outcomes Grid Section */}
-      <div className="scroll-section">
-        <Outcomes />
-      </div>
+      <Outcomes />
 
       {/* Why Care Providers Choose Cantra Section */}
-      <div className="scroll-section">
-        <WhyChoose />
-      </div>
+      <WhyChoose />
 
       {/* Real Results Stats Section */}
-      <div className="scroll-section">
-        <Stats />
-      </div>
+      <Stats />
 
       {/* Newsletter Subscription Section */}
-      <div className="scroll-section">
-        <Newsletter />
-      </div>
+      <Newsletter />
 
       {/* Frequently Asked Questions Section */}
-      <div className="scroll-section">
-        <Faq />
-      </div>
+      <Faq />
 
       {/* CTA Banner Section */}
-      <div className="scroll-section">
-        <CallToAction />
-      </div>
+      <CallToAction />
 
     </div>
   )

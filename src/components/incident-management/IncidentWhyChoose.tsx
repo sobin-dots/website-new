@@ -24,7 +24,7 @@ export function IncidentWhyChoose() {
             <div className="grid grid-cols-1 lg:grid-cols-12">
               
               {/* Floating Dark Green Card (6 cols) */}
-              <div className="lg:col-span-6 lg:col-start-7 bg-[#3D5D58] text-white p-6 sm:p-10 md:p-12 rounded-[20px] shadow-lg space-y-4 sm:space-y-6">
+              <div className="lg:col-span-6 lg:col-start-7 bg-[#3D5D58] text-white p-6 sm:p-10 md:p-12 rounded-[20px] shadow-lg space-y-4 sm:space-y-6 scroll-section">
                 <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[50px] capitalize text-white font-['Lato',sans-serif]">
                   Why Care Providers Choose Cantra
                 </h2>

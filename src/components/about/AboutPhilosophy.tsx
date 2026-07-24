@@ -9,7 +9,7 @@ export function AboutPhilosophy() {
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         
         {/* Header 2-Column Block */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16 pb-8 border-b border-slate-100">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16 pb-8 border-b border-slate-100 scroll-section">
           <div className="lg:col-span-7 space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
               Our Philosophy, <br />Mission & Vision
@@ -24,7 +24,7 @@ export function AboutPhilosophy() {
         </div>
 
         {/* 3 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 scroll-section">
           
           {/* Card 1: Philosophy */}
           <div className="p-8 rounded-2xl bg-[#F0F7FF] border border-blue-100/50 space-y-6">

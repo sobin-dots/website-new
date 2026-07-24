@@ -32,7 +32,7 @@ export function CqcMetrics() {
       <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
 
         {/* Header Block */}
-        <div className="text-center max-w-[893px] mx-auto space-y-3">
+        <div className="text-center max-w-[893px] mx-auto space-y-3 scroll-section">
           <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-white font-['Lato',sans-serif]">
             How Cantra Keeps You Inspection Ready
           </h2>
@@ -42,7 +42,7 @@ export function CqcMetrics() {
         </div>
 
         {/* 4 Column Workflow Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center scroll-section">
           {steps.map((item, idx) => {
             const IconComp = item.icon
             return (

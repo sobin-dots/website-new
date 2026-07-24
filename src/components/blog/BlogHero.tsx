@@ -20,7 +20,7 @@ export function BlogHero() {
       <div className="mx-auto max-w-7xl px-6 md:px-8 space-y-10">
         
         {/* Title Block */}
-        <div className="space-y-5 max-w-3xl mx-auto">
+        <div className="space-y-5 max-w-3xl mx-auto scroll-section">
           <span className="text-xs font-semibold text-muted-foreground uppercase tracking-widest block">
             Blog
           </span>
@@ -33,7 +33,7 @@ export function BlogHero() {
         </div>
 
         {/* Search Bar */}
-        <div className="max-w-md mx-auto relative flex items-center bg-white border border-slate-200 shadow-sm rounded-full overflow-hidden p-1.5 focus-within:border-primary/50 transition-colors">
+        <div className="max-w-md mx-auto relative flex items-center bg-white border border-slate-200 shadow-sm rounded-full overflow-hidden p-1.5 focus-within:border-primary/50 transition-colors scroll-section">
           <div className="pl-4 text-slate-400">
             <Search className="h-5 w-5" />
           </div>
@@ -48,7 +48,7 @@ export function BlogHero() {
         </div>
 
         {/* Categories Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-3 pt-4 max-w-4xl mx-auto">
+        <div className="flex flex-wrap items-center justify-center gap-3 pt-4 max-w-4xl mx-auto scroll-section">
           {categories.map((cat) => (
             <button
               key={cat.name}

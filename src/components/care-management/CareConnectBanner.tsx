@@ -11,7 +11,7 @@ export function CareConnectBanner() {
       <div className="w-full">
 
         {/* Banner Card Container (Frame 2238) */}
-        <div className="relative bg-[#A06256] rounded-[20px] flex flex-col lg:flex-row items-center justify-between px-6 sm:px-10 lg:px-12 py-8 sm:py-10 lg:py-0 min-h-[338px] isolation-isolate">
+        <div className="relative bg-[#A06256] rounded-[20px] flex flex-col lg:flex-row items-center justify-between px-6 sm:px-10 lg:px-12 py-8 sm:py-10 lg:py-0 min-h-[338px] isolation-isolate scroll-section">
 
           {/* Left Text & Button Stack (Frame 2239) */}
           <div className="flex flex-col items-start gap-6 sm:gap-[29px] max-w-[623px] z-10 py-6 lg:py-10">

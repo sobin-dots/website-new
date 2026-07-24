@@ -38,7 +38,7 @@ export function ContactHero() {
       <div className="mx-auto max-w-7xl px-6 md:px-8 space-y-14">
         
         {/* Title Block */}
-        <div className="space-y-6 max-w-3xl mx-auto">
+        <div className="space-y-6 max-w-3xl mx-auto scroll-section">
           <span className="text-xs font-semibold text-muted-foreground uppercase tracking-widest block">
             Contact Us
           </span>
@@ -74,7 +74,7 @@ export function ContactHero() {
         </div>
 
         {/* 3 Department Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left max-w-6xl mx-auto scroll-section">
           {departments.map((dept, idx) => {
             const IconComp = dept.icon
             return (

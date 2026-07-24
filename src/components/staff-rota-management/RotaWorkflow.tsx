@@ -36,7 +36,7 @@ export function RotaWorkflow() {
       <div className="mx-auto max-w-[1188px] px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center gap-[30px] w-full">
 
         {/* Section Header (Frame 888) */}
-        <div className="text-center w-full max-w-[1188px] mx-auto flex flex-col justify-center items-center gap-[12px]">
+        <div className="text-center w-full max-w-[1188px] mx-auto flex flex-col justify-center items-center gap-[12px] scroll-section">
           {/* Frame 744 */}
           <div className="flex flex-col justify-center items-center w-[1188px] gap-[6px] mx-auto max-w-full">
             <h2 className="text-[28px] sm:text-[36px] font-bold leading-tight capitalize text-[#293836] font-['Lato',sans-serif] text-center w-full">
@@ -52,7 +52,7 @@ export function RotaWorkflow() {
         </div>
 
         {/* 2-Column Layout (Frame 956) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-[60px] items-center w-full max-w-[1188px]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-[60px] items-center w-full max-w-[1188px] scroll-section">
 
           {/* Left Column (Group 15 / Graphic Collage) */}
           <div className="lg:col-span-6 flex justify-center items-center overflow-visible py-2">

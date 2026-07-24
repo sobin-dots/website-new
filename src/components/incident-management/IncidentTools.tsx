@@ -48,14 +48,14 @@ export function IncidentTools() {
       <div className="w-full space-y-12 sm:space-y-16">
         
         {/* Centered Title */}
-        <div className="text-center max-w-[893px] mx-auto">
+        <div className="text-center max-w-[893px] mx-auto scroll-section">
           <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
             Powerful Tools For Incident & Safeguarding Management
           </h2>
         </div>
 
         {/* 2-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-[1240px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-[1240px] mx-auto scroll-section">
           {tools.map((item, idx) => (
             <div key={idx} className="space-y-4 flex flex-col justify-between">
               {/* Image Container */}

@@ -14,7 +14,7 @@ export function BlogNewsletter() {
       <div className="mx-auto max-w-7xl px-6 md:px-8">
         
         {/* Banner Card Wrapper */}
-        <div className="bg-[#FAF3EB] rounded-[32px] overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center px-8 pt-8 lg:px-14 lg:pt-0 shadow-sm text-slate-900">
+        <div className="bg-[#FAF3EB] rounded-[32px] overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-8 items-center px-8 pt-8 lg:px-14 lg:pt-0 shadow-sm text-slate-900 scroll-section">
           
           {/* Left Column (7 columns) */}
           <div className="lg:col-span-7 space-y-6 pb-8 lg:py-14 animate-in fade-in slide-in-from-left-4 duration-500">

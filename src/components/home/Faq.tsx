@@ -50,7 +50,7 @@ export function Faq() {
       <div className="mx-auto max-w-4xl px-6 md:px-8">
 
         {/* Header Block */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-14 scroll-section">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary font-sans">
             Frequently Asked Questions
           </h2>
@@ -60,7 +60,7 @@ export function Faq() {
         </div>
 
         {/* Outer Card Container */}
-        <div className="rounded-[32px] bg-[#FCFAF6] p-6 sm:p-8 md:p-10 border border-slate-200/60 shadow-xs">
+        <div className="rounded-[32px] bg-[#FCFAF6] p-6 sm:p-8 md:p-10 border border-slate-200/60 shadow-xs scroll-section">
           <div className="divide-y divide-slate-200/80">
             {faqItems.map((item, idx) => {
               const isOpen = openIndex === idx
