@@ -64,7 +64,14 @@ export default function CareServiceTypesPage() {
       <MentalHealthCareHomes />
 
       {/* 4. Bottom CTA Banner */}
-      <CareServiceCTA />
+      <CareServiceCTA 
+        title="Experience Cantra in Your Care Environment"
+        subtitle="See how Cantra can simplify your daily operations, strengthen compliance, and empower your team with technology built specifically for your care setting."
+        primaryButtonText="Talk to our Team"
+        primaryButtonHref="/contact"
+        secondaryButtonText="Book a Demo"
+        secondaryButtonHref="/book-demo"
+      />
 
     </div>
   )

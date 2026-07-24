@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight, SlidersHorizontal } from "lucide-react"
@@ -9,13 +8,13 @@ export function CareHero() {
   return (
     <section className="py-4 sm:py-8 bg-white overflow-hidden text-[#293836]">
       <div className="w-full">
-        
+
         {/* 2-Column Hero Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
+
           {/* Left Column: Heading, Subtitle & CTAs (6 columns) */}
-          <div className="lg:col-span-6 flex flex-col justify-center items-start gap-5 sm:gap-[30px] max-w-[596px] scroll-section">
-            
+          <div className="lg:col-span-6 flex flex-col justify-center items-start gap-5 sm:gap-[30px] max-w-[596px] scroll-section order-2 lg:order-1">
+
             {/* Title & Copy (Frame 746 & 744) */}
             <div className="flex flex-col items-start gap-3 sm:gap-4">
               <h1 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
@@ -29,7 +28,7 @@ export function CareHero() {
             {/* CTA Buttons (Frame 859 / 858) */}
             <div className="flex flex-wrap sm:flex-nowrap items-center gap-[10px] pt-1 w-full sm:w-auto">
               {/* Button 1: Explore Features (Frame 856) */}
-              <Link 
+              <Link
                 href="#features"
                 className="inline-flex items-center justify-center gap-[11px] sm:gap-[13px] rounded-full border border-[#527A73] hover:bg-[#EAF0EE]/60 text-[#3D5D58] font-medium text-[12px] sm:text-[13px] px-4 sm:px-5 py-2 transition-colors h-[44px] sm:h-[48px] w-full sm:w-auto min-w-0 sm:min-w-[189px] bg-transparent"
               >
@@ -40,7 +39,7 @@ export function CareHero() {
               </Link>
 
               {/* Button 2: Book a Demo (Frame 857) */}
-              <Link 
+              <Link
                 href="/book-demo"
                 className="inline-flex items-center justify-center gap-[11px] sm:gap-[13px] rounded-full border border-[#527A73] bg-[#527A73] hover:bg-[#527A73]/90 text-white font-medium text-[12px] sm:text-[13px] px-4 sm:px-5 py-2 transition-colors h-[44px] sm:h-[48px] w-full sm:w-auto min-w-0 sm:min-w-[171px]"
               >
@@ -54,8 +53,8 @@ export function CareHero() {
           </div>
 
           {/* Right Column: Hero Graphic Layer Stack (Frame 1860) */}
-          <div className="lg:col-span-6 relative w-full h-[350px] sm:h-[480px] md:h-[560px] lg:h-[600px] flex items-center justify-center mt-4 lg:mt-0 scroll-section">
-            
+          <div className="lg:col-span-6 relative w-full h-[350px] sm:h-[480px] md:h-[560px] lg:h-[600px] flex items-center justify-center mt-4 lg:mt-0 scroll-section order-1 lg:order-2">
+
             {/* 1. Dark Green Arch Background (Rectangle 82) */}
             <div className="absolute right-0 bottom-0 w-[82%] sm:w-[78%] h-[82%] sm:h-[84%] bg-[#3D5D58] rounded-t-[130px] sm:rounded-t-[200px] rounded-br-none rounded-bl-[32px] sm:rounded-bl-[42px] z-0" />
 
@@ -83,7 +82,7 @@ export function CareHero() {
             </div>
 
             {/* 4. Top Right Floating Vision Control Badge (Frame 1774) */}
-            <div className="absolute right-1 sm:right-6 top-1 sm:top-3 z-20 bg-white px-2.5 sm:px-3.5 py-1.5 sm:py-2.5 rounded-[8px] sm:rounded-[10px] shadow-[-2px_4px_16px_rgba(0,0,0,0.11)] border border-slate-100 flex items-center gap-2 sm:gap-3">
+            <div className="absolute right-1 sm:right-6 top-1 sm:top-3 z-20 bg-white px-2.5 py-1.5 sm:py-2.5 rounded-[8px] sm:rounded-[10px] shadow-[-2px_4px_16px_rgba(0,0,0,0.11)] border border-slate-100 flex items-center gap-2 sm:gap-3">
               <div className="space-y-0.5">
                 <span className="text-xs sm:text-[17px] font-bold text-[#293836] font-['Lato',sans-serif] block leading-none">
                   99.8%

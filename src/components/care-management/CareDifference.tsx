@@ -1,49 +1,49 @@
 'use client'
 
 import * as React from "react"
-import { 
-  FileText, 
-  MessageSquare, 
-  Clock, 
-  Users, 
-  BarChart3, 
-  ShieldCheck 
+import {
+  FileText,
+  MessageSquare,
+  Clock,
+  Users,
+  BarChart3,
+  ShieldCheck
 } from "lucide-react"
 
 const benefits = [
   {
     icon: FileText,
-    iconColor: "text-blue-600 bg-blue-50 border-blue-100",
+    iconColor: "bg-[#D9EEFF] text-[#3294FF] border border-[#3294FF]/20",
     title: "Zero Paperwork",
     description: "Replace physical files with automated daily logs, care plan revisions, and medication administration charts."
   },
   {
     icon: MessageSquare,
-    iconColor: "text-emerald-600 bg-emerald-50 border-emerald-100",
+    iconColor: "bg-[#E6F4EA] text-[#137333] border border-[#137333]/20",
     title: "Open Communication",
     description: "Instantly broadcast shift handovers, risk escalations, and CQC-related notices to your entire team."
   },
   {
     icon: Clock,
-    iconColor: "text-amber-600 bg-amber-50 border-amber-100",
+    iconColor: "bg-[#FEF7E0] text-[#B06000] border border-[#B06000]/20",
     title: "Faster Onboarding",
     description: "Train caretakers and agency workers in minutes with Cantra's intuitive, simple interface layouts."
   },
   {
     icon: Users,
-    iconColor: "text-purple-600 bg-purple-50 border-purple-100",
+    iconColor: "bg-[#F3E8FF] text-[#7C3AED] border border-[#7C3AED]/20",
     title: "Family Engagement",
     description: "Provide peace of mind by letting authorized family members view care plans, assessments, and status logs."
   },
   {
     icon: BarChart3,
-    iconColor: "text-rose-600 bg-rose-50 border-rose-100",
+    iconColor: "bg-[#FCE8E6] text-[#C5221F] border border-[#C5221F]/20",
     title: "Actionable Analytics",
     description: "Track outcomes, fall frequencies, fluid charts, and admin workload times to continuously optimize resources."
   },
   {
     icon: ShieldCheck,
-    iconColor: "text-teal-600 bg-teal-50 border-teal-100",
+    iconColor: "bg-[#DEE9E6] text-[#3D5D58] border border-[#3D5D58]/20",
     title: "Regulatory compliance",
     description: "Automatically log all changes with electronic signatures, timestamp tracking, and pre-built CQC review templates."
   }
@@ -52,8 +52,8 @@ const benefits = [
 export function CareDifference() {
   return (
     <section className="py-4 sm:py-8 bg-white text-slate-900">
-      <div className="w-full">
-        
+      <div className="w-full max-w-[1240px] mx-auto">
+
         {/* Heading Grid Block */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16 pb-8 border-b border-slate-100 scroll-section">
           {/* Left Heading */}
@@ -61,7 +61,7 @@ export function CareDifference() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">
               The Difference Cantra Makes
             </h2>
-            <p className="text-lg text-slate-500 font-medium font-serif italic">
+            <p className="text-lg text-slate-500 font-medium">
               How Care Teams deliver better care with digital workflows.
             </p>
           </div>
@@ -76,24 +76,22 @@ export function CareDifference() {
           {benefits.map((benefit, idx) => {
             const IconComp = benefit.icon
             return (
-              <div 
+              <div
                 key={idx}
-                className="p-8 rounded-2xl bg-[#F4F6F6] border border-slate-100 hover:border-primary/20 transition-all duration-300 shadow-sm"
+                className="w-full min-h-[231px] p-5 rounded-[20px] bg-white shadow-sm flex flex-col items-start gap-2.5 hover:shadow-md transition-all duration-300"
               >
                 {/* Icon Wrapper */}
-                <div className={`flex h-12 w-12 items-center justify-center rounded-xl border mb-6 ${benefit.iconColor}`}>
-                  <IconComp className="h-6 w-6" />
+                <div className={`flex h-8 w-8 items-center justify-center rounded-full shrink-0 ${benefit.iconColor}`}>
+                  <IconComp className="h-[18px] w-[18px]" />
                 </div>
-                
+
                 {/* Text Content */}
-                <div className="space-y-2">
-                  <h3 className="text-lg font-bold text-primary font-sans">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-sm text-slate-500 leading-relaxed">
-                    {benefit.description}
-                  </p>
-                </div>
+                <h3 className="text-base font-medium text-[#293836] capitalize leading-[27px] font-['Inter',sans-serif]">
+                  {benefit.title}
+                </h3>
+                <p className="text-xs font-normal text-[#293836] capitalize leading-[27px] font-['Inter',sans-serif]">
+                  {benefit.description}
+                </p>
               </div>
             )
           })}

@@ -46,10 +46,10 @@ export function IncidentTools() {
   return (
     <section className="py-4 sm:py-8 bg-white text-[#293836]">
       <div className="w-full space-y-12 sm:space-y-16">
-        
+
         {/* Centered Title */}
         <div className="text-center max-w-[893px] mx-auto scroll-section">
-          <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
+          <h2 className="text-xl sm:text-3xl md:text-[35px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
             Powerful Tools For Incident & Safeguarding Management
           </h2>
         </div>
@@ -60,7 +60,7 @@ export function IncidentTools() {
             <div key={idx} className="space-y-4 flex flex-col justify-between">
               {/* Image Container */}
               <div className="relative w-full aspect-[1.45] rounded-[20px] overflow-hidden">
-                <Image 
+                <Image
                   src={item.image}
                   alt={item.title}
                   fill
@@ -70,14 +70,14 @@ export function IncidentTools() {
               </div>
 
               {/* Text Block */}
-              <div className="space-y-2">
-                <h3 className="text-xl sm:text-2xl md:text-[28px] font-bold text-[#293836] font-['Lato',sans-serif]">
+              <div className="space-y-5">
+                <h3 className="text-xl sm:text-2xl font-bold text-[#293836] font-['Lato',sans-serif]">
                   {item.title}
                 </h3>
-                <h4 className="text-base sm:text-lg md:text-[20px] font-medium text-[#293836] font-['Lato',sans-serif]">
+                <h4 className="text-base sm:text-lg font-semibold text-[#293836] font-['Lato',sans-serif]">
                   {item.subtitle}
                 </h4>
-                <p className="text-xs sm:text-sm md:text-base font-normal leading-relaxed md:leading-[27px] text-[#293836] capitalize font-['Inter',sans-serif] pt-1">
+                <p className="text-xs sm:text-sm md:text-[15px] font-normal leading-relaxed md:leading-[26px] text-[#4A5D5A] capitalize font-['Inter',sans-serif]">
                   {item.description}
                 </p>
               </div>

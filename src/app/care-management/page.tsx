@@ -67,8 +67,15 @@ export default function CareManagementPage() {
       </div>
 
       {/* 5. Bottom Call to Action Banner (Full Bleed Background) */}
-      <div className="mt-16 sm:mt-24 ">
-        <CareServiceCTA />
+      <div className="mt-16 sm:mt-24">
+        <CareServiceCTA 
+          title="Transform Care Management With Cantra"
+          subtitle="Simplify daily care plans, assessments, and records, enabling safer decisions, better collaboration, and greater confidence in every shift."
+          primaryButtonText="Talk to our Team"
+          primaryButtonHref="/contact"
+          secondaryButtonText="Book a Demo"
+          secondaryButtonHref="/book-demo"
+        />
       </div>
 
     </div>

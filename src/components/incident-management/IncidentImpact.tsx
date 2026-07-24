@@ -28,8 +28,8 @@ const impacts = [
 
 export function IncidentImpact() {
   return (
-    <section className="py-4 sm:py-8 bg-white text-[#293836]">
-      <div className="w-full space-y-12 sm:space-y-16">
+    <section className="py-16 md:py-24 bg-white text-[#293836]">
+      <div className="w-full max-w-[1240px] mx-auto px-6 sm:px-10 lg:px-12 space-y-12 sm:space-y-16">
         
         {/* Centered Title */}
         <div className="text-center max-w-[893px] mx-auto scroll-section">
@@ -38,23 +38,23 @@ export function IncidentImpact() {
           </h2>
         </div>
 
-        {/* 4-Column Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center max-w-[1240px] mx-auto scroll-section">
+        {/* 4-Column Left-Aligned Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 scroll-section">
           {impacts.map((item, idx) => {
             const IconComp = item.icon
             return (
-              <div key={idx} className="flex flex-col items-center space-y-4">
+              <div key={idx} className="flex flex-col items-start text-left space-y-4">
                 {/* Circular Icon Badge */}
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#DEE9E6] border border-[#3D5D58]/20 text-[#3D5D58] shadow-sm">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#3D5D58] text-white shadow-sm shrink-0">
                   <IconComp className="h-5 w-5" />
                 </div>
                 
                 {/* Text Block */}
-                <div className="space-y-2 max-w-[240px]">
-                  <h3 className="text-base sm:text-lg md:text-[20px] font-bold text-[#293836] font-['Lato',sans-serif]">
+                <div className="space-y-2.5">
+                  <h3 className="text-base sm:text-lg md:text-[18px] font-bold text-[#293836] font-['Lato',sans-serif] capitalize leading-snug">
                     {item.title}
                   </h3>
-                  <p className="text-xs sm:text-sm md:text-base font-normal leading-relaxed md:leading-[27px] text-[#293836] font-['Inter',sans-serif] pt-1">
+                  <p className="text-xs sm:text-sm text-[#4A5D5A] leading-[24px] font-['Inter',sans-serif] capitalize">
                     {item.description}
                   </p>
                 </div>

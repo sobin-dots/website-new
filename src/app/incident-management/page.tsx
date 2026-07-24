@@ -58,29 +58,42 @@ export default function IncidentManagementPage() {
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16 md:space-y-20">
         {/* 1. Hero Header */}
         <IncidentHero />
+      </div>
 
-        {/* 2. Terracotta Banner: Every Incident Is An Opportunity */}
-        <IncidentOpportunity />
+      {/* 2. Terracotta Banner: Every Incident Is An Opportunity */}
+      <IncidentOpportunity />
 
+      {/* Centralized Page Container for Remaining Content */}
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16 md:space-y-20 mt-12 sm:mt-16 md:mt-10">
         {/* 3. 6-Tool Grid: Powerful Tools For Incident & Safeguarding Management */}
         <IncidentTools />
 
         {/* 4. S-Curve Timeline: From Incident To Resolution In One Connected Workflow */}
         <IncidentWorkflow />
+      </div>
 
-        {/* 5. Why Care Providers Choose Cantra */}
-        <IncidentWhyChoose />
+      {/* 5. Why Care Providers Choose Cantra */}
+      <IncidentWhyChoose />
 
-        {/* 6. Supporting Every Stage Of Incident Management */}
-        <IncidentStages />
+      {/* 6. Supporting Every Stage Of Incident Management */}
+      <IncidentStages />
 
+      {/* Centralized Page Container for Final Section */}
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16 md:space-y-20 mt-12 sm:mt-16 md:mt-20">
         {/* 7. 4-Column Impact: The Impact Of Smarter Incident Management */}
         <IncidentImpact />
       </div>
 
       {/* 8. Bottom CTA Banner (Full Bleed Background) */}
-      <div className="mt-16 sm:mt-24 ">
-        <CareServiceCTA />
+      <div className="mt-16 sm:mt-24">
+        <CareServiceCTA
+          title="Transform Incident Management With Cantra"
+          subtitle="Empower your care team to log, track, and analyze incidents in real-time, ensuring complete compliance and a safer care environment."
+          primaryButtonText="Talk to our Team"
+          primaryButtonHref="/contact"
+          secondaryButtonText="Book a Demo"
+          secondaryButtonHref="/book-demo"
+        />
       </div>
 
     </div>

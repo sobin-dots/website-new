@@ -58,17 +58,27 @@ export default function EmarPage() {
 
         {/* 2. 5 Alternating Feature Blocks */}
         <EmarFeatures />
+      </div>
 
-        {/* 3. Built For Clinical Safety And Regulatory Compliance */}
-        <EmarClinicalSafety />
+      {/* 3. Built For Clinical Safety And Regulatory Compliance */}
+      <EmarClinicalSafety />
 
+      {/* Centralized Page Container for Remaining Content */}
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16 md:space-y-20 mt-12 sm:mt-16 md:mt-20">
         {/* 4. The Cantra Advantage */}
         <EmarAdvantage />
       </div>
 
       {/* 5. Bottom Call to Action Banner (Full Bleed Background) */}
-      <div className="mt-16 sm:mt-24 ">
-        <CareServiceCTA />
+      <div className="mt-16 sm:mt-24">
+        <CareServiceCTA 
+          title="Transform Medication Management With Cantra EMAR"
+          subtitle="Give Your Care Team The Confidence To Administer Medications Safely, Reduce Administrative Burden, And Maintain Complete Compliance With An Intelligent EMAR Solution Designed For Modern Care Providers."
+          primaryButtonText="Talk to our Team"
+          primaryButtonHref="/contact"
+          secondaryButtonText="Book a Demo"
+          secondaryButtonHref="/book-demo"
+        />
       </div>
 
     </div>

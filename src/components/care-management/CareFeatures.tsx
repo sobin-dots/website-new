@@ -1,6 +1,5 @@
 'use client'
 
-import * as React from "react"
 import Image from "next/image"
 import { SlidersHorizontal, ShieldCheck } from "lucide-react"
 
@@ -8,7 +7,7 @@ export function CareFeatures() {
   return (
     <section className="py-4 sm:py-8 bg-white text-[#293836]">
       <div className="w-full space-y-16 sm:space-y-24 md:space-y-32">
-        
+
         {/* Intro Centered Section (Frame 863 & 860) */}
         <div className="text-center max-w-[893px] mx-auto space-y-3 sm:space-y-4 scroll-section">
           <h2 className="text-2xl sm:text-3xl md:text-[40px] font-bold leading-tight md:leading-[66px] capitalize text-[#293836] font-['Lato',sans-serif]">
@@ -26,7 +25,7 @@ export function CareFeatures() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-16 items-center max-w-[1240px] mx-auto scroll-section">
             {/* Image Wrapper */}
             <div className="lg:col-span-6 relative w-full h-[260px] sm:h-[380px] md:h-[480px] rounded-[16px] sm:rounded-[20px] overflow-hidden">
-              <Image 
+              <Image
                 src="/images/care-management/risk-assessments.png"
                 alt="Risk Assessments"
                 fill
@@ -67,7 +66,7 @@ export function CareFeatures() {
             <div className="lg:col-span-6 relative w-full h-[320px] sm:h-[440px] md:h-[500px] flex items-center justify-center lg:order-2 order-1">
               {/* Back Image (person-centred-care-plans-1.png) */}
               <div className="absolute left-1 sm:left-4 top-0 w-[52%] h-[84%] rounded-[16px] sm:rounded-[20px] overflow-hidden z-10">
-                <Image 
+                <Image
                   src="/images/care-management/person-centred-care-plans-1.png"
                   alt="Person-centred care management dashboard"
                   fill
@@ -77,7 +76,7 @@ export function CareFeatures() {
               </div>
 
               {/* Floating 99.8% Vision Control Badge (Frame 960) */}
-              <div className="absolute left-[36%] top-[4%] z-30 bg-white px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-[8px] sm:rounded-[10px] shadow-[0_4px_12px_rgba(0,0,0,0.12)] border border-slate-100 flex items-center gap-2">
+              <div className="absolute left-[26%] -bottom-[1%] z-30 bg-white p-4 sm:p-4 px-3 sm:px-4 rounded-[8px] sm:rounded-[10px] shadow-[0_4px_12px_rgba(0,0,0,0.12)] border border-slate-100 flex items-center gap-2">
                 <div className="space-y-0.5">
                   <span className="text-xs sm:text-base font-bold text-[#293836] font-['Lato',sans-serif] block leading-none">
                     99.8%
@@ -93,7 +92,7 @@ export function CareFeatures() {
 
               {/* Front Image (person-centred-care-plans-2.png) */}
               <div className="absolute right-1 sm:right-4 bottom-0 w-[50%] h-[72%] rounded-[16px] sm:rounded-[20px] overflow-hidden z-20">
-                <Image 
+                <Image
                   src="/images/care-management/person-centred-care-plans-2.png"
                   alt="Caregiver explaining care plan to resident"
                   fill
@@ -111,7 +110,7 @@ export function CareFeatures() {
               {/* Row 1: Two Side-by-Side Images */}
               <div className="grid grid-cols-2 gap-2.5 sm:gap-3 w-full">
                 <div className="relative aspect-[1.4] rounded-[14px] sm:rounded-[20px] overflow-hidden">
-                  <Image 
+                  <Image
                     src="/images/care-management/observations-1.png"
                     alt="Caregiver recording observations"
                     fill
@@ -120,7 +119,7 @@ export function CareFeatures() {
                   />
                 </div>
                 <div className="relative aspect-[1.4] rounded-[14px] sm:rounded-[20px] overflow-hidden">
-                  <Image 
+                  <Image
                     src="/images/care-management/Observations-2.png"
                     alt="Caregiver assisting senior resident"
                     fill
@@ -131,7 +130,7 @@ export function CareFeatures() {
               </div>
               {/* Row 2: Full Width Image */}
               <div className="relative w-full aspect-[2.1] rounded-[14px] sm:rounded-[20px] overflow-hidden">
-                <Image 
+                <Image
                   src="/images/care-management/Observations-3.png"
                   alt="Caregiver walking with resident"
                   fill
@@ -172,7 +171,7 @@ export function CareFeatures() {
 
             {/* Overlapping Images with Floating 100% Secure Storage Badges (Frame 2250) */}
             <div className="lg:col-span-6 relative w-full h-[360px] sm:h-[460px] md:h-[520px] flex items-center justify-center lg:order-2 order-1">
-              
+
               {/* Left Image Card */}
               <div className="absolute left-1 sm:left-4 top-[5%] w-[48%] h-[90%] flex flex-col items-center z-10">
                 {/* Floating Badge 1 */}
@@ -187,7 +186,7 @@ export function CareFeatures() {
                 </div>
 
                 <div className="relative w-full flex-1 rounded-[16px] sm:rounded-[20px] overflow-hidden">
-                  <Image 
+                  <Image
                     src="/images/care-management/version-history-1.png"
                     alt="Version History Log"
                     fill
@@ -211,7 +210,7 @@ export function CareFeatures() {
                 </div>
 
                 <div className="relative w-full flex-1 rounded-[16px] sm:rounded-[20px] overflow-hidden">
-                  <Image 
+                  <Image
                     src="/images/care-management/version-history-2.png"
                     alt="Audit log and approval workflow"
                     fill
@@ -229,7 +228,7 @@ export function CareFeatures() {
             {/* Visual Stack (Frame 1778) */}
             <div className="lg:col-span-6 flex flex-col gap-2.5 sm:gap-3 max-w-[571px] mx-auto w-full">
               <div className="relative w-full aspect-[2.2] rounded-[14px] sm:rounded-[20px] overflow-hidden">
-                <Image 
+                <Image
                   src="/images/care-management/client-family-input-1.png"
                   alt="Family portal overview"
                   fill
@@ -238,7 +237,7 @@ export function CareFeatures() {
                 />
               </div>
               <div className="relative w-full aspect-[1.65] rounded-[14px] sm:rounded-[20px] overflow-hidden">
-                <Image 
+                <Image
                   src="/images/care-management/client-family-input-2.png"
                   alt="Family feedback meeting"
                   fill
