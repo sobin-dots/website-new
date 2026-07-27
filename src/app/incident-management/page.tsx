@@ -87,11 +87,9 @@ export default function IncidentManagementPage() {
       {/* 8. Bottom CTA Banner (Full Bleed Background) */}
       <div className="mt-16 sm:mt-24">
         <CareServiceCTA
-          title="Transform Incident Management With Cantra"
-          subtitle="Empower your care team to log, track, and analyze incidents in real-time, ensuring complete compliance and a safer care environment."
-          primaryButtonText="Talk to our Team"
-          primaryButtonHref="/contact"
-          secondaryButtonText="Book a Demo"
+          title="Safer Care Starts with Better Incident Management"
+          subtitle="Equip your team with intuitive tools to capture incidents, take timely action, and continuously improve the quality and safety of care."
+          secondaryButtonText="Book Your Personalised Demo"
           secondaryButtonHref="/book-demo"
         />
       </div>

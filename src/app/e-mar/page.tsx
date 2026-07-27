@@ -50,7 +50,7 @@ export default function EmarPage() {
 
   return (
     <div ref={containerRef} className="min-h-screen pt-5 bg-white text-[#293836]">
-      
+
       {/* Centralized Page Container with Standard Max-Width & Padding */}
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16 md:space-y-20">
         {/* 1. Hero Header */}
@@ -71,9 +71,9 @@ export default function EmarPage() {
 
       {/* 5. Bottom Call to Action Banner (Full Bleed Background) */}
       <div className="mt-16 sm:mt-24">
-        <CareServiceCTA 
-          title="Transform Medication Management With Cantra EMAR"
-          subtitle="Give Your Care Team The Confidence To Administer Medications Safely, Reduce Administrative Burden, And Maintain Complete Compliance With An Intelligent EMAR Solution Designed For Modern Care Providers."
+        <CareServiceCTA
+          title="Transform Medication Management with Cantra eMAR"
+          subtitle="Give your care team the confidence to administer medications safely, reduce administrative burden, and maintain complete compliance with an intelligent eMAR solution designed for modern care providers."
           primaryButtonText="Talk to our Team"
           primaryButtonHref="/contact"
           secondaryButtonText="Book a Demo"

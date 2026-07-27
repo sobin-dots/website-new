@@ -50,7 +50,7 @@ export default function CareManagementPage() {
 
   return (
     <div ref={containerRef} className="min-h-screen pt-5 bg-white text-slate-900">
-      
+
       {/* Centralized Page Container with Standard Max-Width & Padding */}
       <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16 md:space-y-20">
         {/* 1. Hero Header Section */}
@@ -68,9 +68,9 @@ export default function CareManagementPage() {
 
       {/* 5. Bottom Call to Action Banner (Full Bleed Background) */}
       <div className="mt-16 sm:mt-24">
-        <CareServiceCTA 
-          title="Transform Care Management With Cantra"
-          subtitle="Simplify daily care plans, assessments, and records, enabling safer decisions, better collaboration, and greater confidence in every shift."
+        <CareServiceCTA
+          title="Deliver Better Care with Greater Confidence"
+          subtitle="Give your team the tools they need to provide safe, person-centred care while reducing paperwork and improving collaboration. Discover how Cantra helps care providers turn care plans into meaningful everyday care."
           primaryButtonText="Talk to our Team"
           primaryButtonHref="/contact"
           secondaryButtonText="Book a Demo"

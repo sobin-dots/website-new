@@ -8,24 +8,24 @@ import { Button } from "@/components/ui/button"
 const departments = [
   {
     icon: Mail,
-    iconColor: "text-blue-600 bg-blue-50 border-blue-100",
-    bgColor: "bg-[#F0F7FF] border-blue-100/50",
+    iconColor: "text-blue-800 bg-blue-100/50 border-transparent",
+    bgColor: "bg-blue-50/40 border-blue-100/30",
     title: "Sales Enquiries",
     description: "Questions about Pricing, custom plans, or Enterprise deployments?",
     email: "Sales@Cantra.com"
   },
   {
     icon: Headphones,
-    iconColor: "text-purple-600 bg-purple-50 border-purple-100",
-    bgColor: "bg-[#FAF5FF] border-purple-100/50",
+    iconColor: "text-green-800 bg-green-100/50 border-transparent",
+    bgColor: "bg-green-50/40 border-green-100/30",
     title: "Customer Support",
     description: "Already using Cantra? Access our Help Center or speak with our Support specialists.",
     email: "Support@Cantra.com"
   },
   {
     icon: MessageSquare,
-    iconColor: "text-orange-600 bg-orange-50 border-orange-100",
-    bgColor: "bg-[#FFFBF5] border-orange-100/50",
+    iconColor: "text-[#3D5D58] bg-[#FAF5F2] border-[#3D5D58]/20",
+    bgColor: "bg-[#FAF5F2] border-orange-100/30",
     title: "Partnerships",
     description: "Interested in collaborating with us for events, research, or integration? Talk to our specialists.",
     email: "Partners@Cantra.com"

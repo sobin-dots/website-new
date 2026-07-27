@@ -15,9 +15,9 @@ interface CareServiceCTAProps {
 export function CareServiceCTA({
   title = "Experience Cantra in Your Care Environment",
   subtitle = "See how Cantra can simplify your daily operations, strengthen compliance, and empower your team with technology built specifically for your care setting.",
-  primaryButtonText = "Start free trial",
+  primaryButtonText,
   primaryButtonHref = "/free-trial",
-  secondaryButtonText = "Book a Demo",
+  secondaryButtonText,
   secondaryButtonHref = "/book-demo"
 }: CareServiceCTAProps) {
   return (
@@ -39,26 +39,30 @@ export function CareServiceCTA({
         {/* Dual Action Buttons */}
         <div className="flex flex-row flex-wrap items-center justify-center gap-4 pt-3">
           {/* Button 1: Left / Outline Button */}
-          <Link
-            href={primaryButtonHref}
-            className="inline-flex items-center justify-center gap-[13px] rounded-full border border-white/30 hover:bg-white/10 text-white font-medium text-[13px] px-5 py-3 transition-colors h-[56px] min-w-[171px] bg-transparent"
-          >
-            <span>{primaryButtonText}</span>
-            <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white/30 text-white shrink-0">
-              <ArrowUpRight className="h-4 w-4 stroke-[2]" />
-            </div>
-          </Link>
+          {primaryButtonText && (
+            <Link
+              href={primaryButtonHref}
+              className="inline-flex items-center justify-center gap-[13px] rounded-full border border-white/30 hover:bg-white/10 text-white font-medium text-[13px] px-5 py-3 transition-colors h-[56px] min-w-[171px] bg-transparent"
+            >
+              <span>{primaryButtonText}</span>
+              <div className="flex h-8 w-8 items-center justify-center rounded-full border border-white/30 text-white shrink-0">
+                <ArrowUpRight className="h-4 w-4 stroke-[2]" />
+              </div>
+            </Link>
+          )}
 
           {/* Button 2: Right / Filled Button */}
-          <Link
-            href={secondaryButtonHref}
-            className="inline-flex items-center justify-center gap-[13px] rounded-full bg-white hover:bg-white/90 text-[#3D5D58] font-medium text-[13px] px-5 py-3 transition-colors h-[56px] min-w-[171px]"
-          >
-            <span>{secondaryButtonText}</span>
-            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#EAF0EE] text-[#3D5D58] shrink-0">
-              <ArrowUpRight className="h-4 w-4 stroke-[2]" />
-            </div>
-          </Link>
+          {secondaryButtonText && (
+            <Link
+              href={secondaryButtonHref}
+              className="inline-flex items-center justify-center gap-[13px] rounded-full bg-white hover:bg-white/90 text-[#3D5D58] font-medium text-[13px] px-5 py-3 transition-colors h-[56px] min-w-[171px]"
+            >
+              <span>{secondaryButtonText}</span>
+              <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#EAF0EE] text-[#3D5D58] shrink-0">
+                <ArrowUpRight className="h-4 w-4 stroke-[2]" />
+              </div>
+            </Link>
+          )}
         </div>
 
       </div>

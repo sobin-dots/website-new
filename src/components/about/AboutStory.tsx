@@ -1,18 +1,16 @@
-'use client'
-
-import * as React from "react"
+import Image from "next/image"
 
 export function AboutStory() {
   return (
-    <section className="py-20 bg-[#FAF3EB] text-slate-900 overflow-hidden relative">
-      {/* Decorative subtle path lines at the background edges (simulating the path graphic) */}
-      <div className="absolute right-0 bottom-4 w-60 h-24 opacity-15 pointer-events-none hidden md:block">
-        <svg viewBox="0 0 200 100" fill="none" className="w-full h-full stroke-secondary" strokeWidth="2" strokeDasharray="4 4">
-          <path d="M 0,80 Q 50,20 100,50 T 200,30" />
-          <circle cx="100" cy="50" r="4" fill="currentColor" />
-          <circle cx="180" cy="35" r="4" fill="currentColor" />
-        </svg>
-      </div>
+    <section className="py-20 bg-[#FAF3EB] text-[#293836] overflow-hidden relative">
+      {/* Background SVG Image */}
+      <Image
+        src="/images/cantra-about-us/our-story-bg.svg"
+        alt="Decorative background path"
+        fill
+        priority
+        className="object-cover object-center z-0 pointer-events-none select-none"
+      />
 
       <div className="mx-auto max-w-4xl px-6 md:px-8 space-y-12 text-center relative z-10 scroll-section">
         
