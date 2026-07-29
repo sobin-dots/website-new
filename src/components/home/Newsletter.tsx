@@ -10,7 +10,7 @@ export function Newsletter() {
   }
 
   return (
-    <section className="py-12 sm:py-20 bg-white text-slate-900">
+    <section className="py-12 sm:py-20 xl:py-32 2xl:py-40 bg-white text-slate-900">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
 
         {/* Rounded Sand Card Container */}

@@ -32,7 +32,7 @@ const coreFeatures = [
 
 export function Features() {
   return (
-    <section id="features" className="py-24 bg-white text-slate-900">
+    <section id="features" className="py-24 xl:py-32 2xl:py-40 bg-white text-slate-900">
       <div className="mx-auto max-w-7xl px-6 md:px-8">
 
         {/* Heading Section */}

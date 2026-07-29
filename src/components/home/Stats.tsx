@@ -23,7 +23,7 @@ const metrics = [
 
 export function Stats() {
   return (
-    <section className="py-20 bg-secondary text-white">
+    <section className="py-20 xl:py-32 2xl:py-40 bg-secondary text-white">
       <div className="mx-auto max-w-7xl px-4 md:px-8">
 
         {/* Top Centered Label */}

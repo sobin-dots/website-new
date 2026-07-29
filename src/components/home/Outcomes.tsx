@@ -49,7 +49,7 @@ const cards = [
 
 export function Outcomes() {
   return (
-    <section className="py-6 bg-white text-slate-900">
+    <section className="py-12 xl:py-20 2xl:py-28 bg-white text-slate-900">
       <div className="mx-auto max-w-[1157px] px-6 md:px-8">
 
         {/* Header Block (Figma Frame 437) */}

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export function Showcase() {
   return (
-    <section className="py-48 bg-primary text-white overflow-hidden relative">
+    <section className="py-48 xl:py-56 2xl:py-64 bg-primary text-white overflow-hidden relative">
       {/* Background medical/care watermark patterns */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Image

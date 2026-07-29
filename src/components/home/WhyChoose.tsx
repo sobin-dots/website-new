@@ -38,7 +38,7 @@ const pillars = [
 
 export function WhyChoose() {
   return (
-    <section className="py-12 bg-white text-slate-900 border-slate-100">
+    <section className="py-16 md:py-24 xl:py-32 2xl:py-40 bg-white text-slate-900 border-slate-100">
       <div className="mx-auto max-w-7xl px-6 md:px-8">
 
         {/* Header Block */}

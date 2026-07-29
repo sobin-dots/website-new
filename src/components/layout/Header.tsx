@@ -97,7 +97,7 @@ export function Header() {
           : "absolute top-6 left-0 border-b border-transparent bg-transparent"
         : "sticky top-0 bg-white/95 backdrop-blur-md"
     )}>
-      <div className="mx-auto flex h-16 md:h-24 max-w-[2000px] items-center justify-between px-5">
+      <div className="mx-auto flex h-16 md:h-24 max-w-[2600px] items-center justify-between px-5">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
           <Image

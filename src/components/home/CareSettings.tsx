@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export function CareSettings() {
   return (
-    <section className="py-12 bg-white text-slate-900">
+    <section className="py-12 xl:py-24 2xl:py-32 bg-white text-slate-900">
       <div className="mx-auto max-w-7xl px-6 md:px-8">
 
         {/* Header Block */}

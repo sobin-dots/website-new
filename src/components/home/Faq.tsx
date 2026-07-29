@@ -46,7 +46,7 @@ export function Faq() {
   }
 
   return (
-    <section className="py-20 md:py-24 bg-white text-slate-900">
+    <section className="py-20 md:py-24 xl:py-32 2xl:py-40 bg-white text-slate-900">
       <div className="mx-auto max-w-4xl px-6 md:px-8">
 
         {/* Header Block */}
