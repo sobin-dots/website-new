@@ -90,10 +90,10 @@ export function Header() {
 
   return (
     <header className={cn(
-      "z-50 w-full font-body transition-all duration-300",
+      "z-50 w-full font-body transition-[background-color,border-color,box-shadow] duration-300",
       isHome
         ? scrolled
-          ? "sticky top-0 bg-primary shadow-md "
+          ? "sticky top-0 bg-primary shadow-md"
           : "absolute top-0 left-0 border-b border-transparent bg-transparent"
         : "sticky top-0 bg-white/95 backdrop-blur-md"
     )}>
@@ -105,7 +105,8 @@ export function Header() {
             alt="Cantra Logo"
             width={200}
             height={58}
-            className="h-10 md:h-14 w-auto object-contain transition-opacity duration-200 group-hover:opacity-90"
+            className="h-10 md:h-14 w-auto object-contain group-hover:opacity-90"
+            style={{ imageRendering: '-webkit-optimize-contrast' }}
             priority
           />
         </Link>
