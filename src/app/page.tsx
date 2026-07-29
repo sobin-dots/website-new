@@ -78,7 +78,7 @@ export default function Home() {
           <div className="absolute inset-0 z-0 bg-gradient-to-r from-black/50 to-black/50" />
         </div>
 
-        <div className="mx-auto max-w-7xl px-6 md:px-8 relative z-10 w-full">
+        <div className="mx-auto max-w-[1840px] px-6 md:px-8 relative z-10 w-full">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
             {/* Left Hero Text */}
@@ -99,49 +99,49 @@ export default function Home() {
                 </div>
               </div>
 
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold tracking-tight leading-[1.3] md:leading-[1.5] text-white">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] xl:text-[68px] 2xl:text-[80px] font-bold tracking-tight leading-[1.3] md:leading-[1.4] lg:leading-[2] xl:leading-[1.15] 2xl:leading-[1.5] text-white">
                 Care Management That<br />
                 <span className="font-serif italic font-normal text-white">Puts People First.</span>
               </h1>
 
-              <p className="text-sm sm:text-base lg:text-lg text-white/80 max-w-xl leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-white/80 max-w-xl lg:max-w-2xl xl:max-w-3xl leading-relaxed">
                 Cantra Helps Adult Social Care Providers To Manage Care Plans, Medication Records, Assessments, Incidents, Compliance, And Reporting - All From A Single Platform.
               </p>
 
               {/* Action Buttons */}
-              <div className="flex flex-row flex-wrap gap-2.5 sm:gap-4 items-center pt-3 sm:pt-2">
-                <Button variant="outline" className="rounded-full border-white/40 hover:border-white text-white bg-black/20 hover:bg-white/10 font-semibold flex items-center gap-1.5 px-4 sm:px-6 h-11 sm:h-12 text-xs sm:text-sm transition-all duration-300">
+              <div className="flex flex-row flex-wrap gap-2.5 sm:gap-4 xl:gap-6 items-center pt-3 sm:pt-2">
+                <Button variant="outline" className="rounded-full border-white/40 hover:border-white text-white bg-black/20 hover:bg-white/10 font-semibold flex items-center gap-1.5 px-4 sm:px-6 xl:px-8 h-11 sm:h-12 xl:h-14 text-xs sm:text-sm xl:text-base transition-all duration-300">
                   Start free trial
-                  <div className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full border border-white/40 text-white ml-1">
-                    <Play className="h-2 w-2 sm:h-3 sm:w-3 fill-current ml-0.5" />
+                  <div className="flex h-6 w-6 sm:h-7 sm:w-7 xl:h-9 xl:w-9 items-center justify-center rounded-full border border-white/40 text-white ml-1">
+                    <Play className="h-2 w-2 sm:h-3 sm:w-3 xl:h-4 xl:w-4 fill-current ml-0.5" />
                   </div>
                 </Button>
-                <Button variant="default" className="rounded-full bg-primary hover:bg-primary/90 text-white font-semibold flex items-center gap-1.5 px-4 sm:px-6 h-11 sm:h-12 text-xs sm:text-sm shadow-lg shadow-primary/20 hover:shadow-primary/35 transition-all duration-300">
+                <Button variant="default" className="rounded-full bg-primary hover:bg-primary/90 text-white font-semibold flex items-center gap-1.5 px-4 sm:px-6 xl:px-8 h-11 sm:h-12 xl:h-14 text-xs sm:text-sm xl:text-base shadow-lg shadow-primary/20 hover:shadow-primary/35 transition-all duration-300">
                   Book a Demo
-                  <div className="flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-white text-primary ml-1">
-                    <Calendar className="h-2 w-2 sm:h-3.5 sm:w-3.5 text-primary" />
+                  <div className="flex h-6 w-6 sm:h-7 sm:w-7 xl:h-9 xl:w-9 items-center justify-center rounded-full bg-white text-primary ml-1">
+                    <Calendar className="h-2 w-2 sm:h-3.5 sm:w-3.5 xl:h-4.5 xl:w-4.5 text-primary" />
                   </div>
                 </Button>
               </div>
             </div>
 
             {/* Right Hero - Floating Glass Stats Panels */}
-            <div className="hidden lg:block relative lg:h-[550px] w-full lg:col-span-6">
+            <div className="hidden lg:block relative lg:h-[1200px] w-full lg:col-span-6">
 
               {/* Stat 1: 12k+ Residents (Top Right) */}
-              <div className="absolute top-[28%] right-[2%] lg:right-[4%] rounded-2xl bg-white/10 backdrop-blur-md p-3 sm:p-4 shadow-xl border border-white/20 text-white min-w-[110px] sm:min-w-[130px] animate-in fade-in zoom-in-95 duration-700 delay-300">
+              <div className="absolute top-[40%] right-[2%] lg:right-[35%] rounded-2xl bg-white/10 backdrop-blur-md p-3 sm:p-4 shadow-xl border border-white/20 text-white min-w-[110px] sm:min-w-[130px] animate-in fade-in zoom-in-95 duration-700 delay-300">
                 <div className="text-xl sm:text-2xl lg:text-3xl font-serif font-normal tracking-tight">12k+</div>
                 <div className="text-[9px] sm:text-[10px] text-white/80 font-sans mt-0.5">Residents served</div>
               </div>
 
               {/* Stat 2: 94% Admin Time (Middle Center) */}
-              <div className="absolute -top-36 left-[5%] xs:left-[10%] rounded-2xl bg-white/10 backdrop-blur-md p-3 shadow-xl border border-white/20 text-white min-w-[110px] animate-in fade-in zoom-in-95 duration-700 delay-300">
+              <div className="absolute bottom-[15%] right-[10%] lg:right-[80%] rounded-2xl bg-white/10 backdrop-blur-md p-3 shadow-xl border border-white/20 text-white min-w-[110px] animate-in fade-in zoom-in-95 duration-700 delay-300">
                 <div className="text-3xl sm:text-4xl lg:text-5xl font-serif font-normal tracking-tight">94%</div>
                 <div className="text-[9px] sm:text-[10px] text-white/80 font-sans mt-1 max-w-[130px] leading-tight">Reduction in documentation time</div>
               </div>
 
               {/* Stat 3: 4.9* Rating Panel with Avatars (Bottom Right) */}
-              <div className="absolute bottom-[2%] right-[4%] lg:right-[2%] rounded-3xl bg-white/10 backdrop-blur-md p-2.5 sm:p-4 shadow-2xl border border-white/20 text-white min-w-[270px] sm:min-w-[320px] animate-in fade-in zoom-in-95 duration-700 delay-500">
+              <div className="absolute bottom-[30%] right-[4%] lg:right-[2%] rounded-3xl bg-white/10 backdrop-blur-md p-2.5 sm:p-4 shadow-2xl border border-white/20 text-white min-w-[270px] sm:min-w-[320px] animate-in fade-in zoom-in-95 duration-700 delay-500">
                 <div className="text-2xl sm:text-3xl lg:text-4xl font-bold font-sans tracking-tight mb-2 sm:mb-3">4.9*</div>
                 <div className="flex items-center gap-3">
                   <div className="flex -space-x-2 shrink-0">
