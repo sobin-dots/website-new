@@ -87,10 +87,10 @@ export default function Home() {
               {/* Mobile-only Floating Glass Stats Panels (hidden on lg) */}
               <div className="block lg:hidden">
                 {/* Stat 1: 12k+ Residents (Above Heading Left) */}
-                <div className="absolute -top-36 left-[5%] xs:left-[10%] rounded-2xl bg-white/10 backdrop-blur-md p-3 shadow-xl border border-white/20 text-white min-w-[110px] animate-in fade-in zoom-in-95 duration-700 delay-300">
+                {/* <div className="absolute -top-36 left-[5%] xs:left-[10%] rounded-2xl bg-white/10 backdrop-blur-md p-3 shadow-xl border border-white/20 text-white min-w-[110px] animate-in fade-in zoom-in-95 duration-700 delay-300">
                   <div className="text-xl font-serif font-normal tracking-tight">12k+</div>
                   <div className="text-[9px] text-white/80 font-sans mt-0.5">Residents served</div>
-                </div>
+                </div> */}
 
                 {/* Stat 2: 94% Admin Time (Below Buttons Right) */}
                 <div className="absolute -bottom-48 right-0 rounded-2xl bg-white/10 backdrop-blur-md p-3.5 shadow-xl border border-white/20 text-white min-w-[130px] animate-in fade-in zoom-in-95 duration-700 delay-400">
