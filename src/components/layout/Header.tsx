@@ -103,9 +103,9 @@ export function Header() {
           <Image
             src={isHome ? "/images/home-page/logo-secondary.svg" : "/images/home-page/logo-primary.svg"}
             alt="Cantra Logo"
-            width={160}
-            height={56}
-            className="h-14 w-auto object-contain transition-all duration-300 group-hover:scale-[1.02]"
+            width={200}
+            height={58}
+            className="h-10 md:h-14 w-auto object-contain transition-opacity duration-200 group-hover:opacity-90"
             priority
           />
         </Link>

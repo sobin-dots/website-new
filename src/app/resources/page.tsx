@@ -1,9 +1,7 @@
 'use client'
 
-import * as React from "react"
 import Link from "next/link"
 import { ArrowUpRight, BookOpen, Download, FileText, LayoutList } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 const resources = [
   {
